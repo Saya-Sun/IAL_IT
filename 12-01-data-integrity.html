@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Integrity Notes</title>  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  <style>
+    body {
+      background: linear-gradient(to right, #eef2f3, #dfe9f3);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .header {
+      background: #0d6efd;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      border-radius: 0 0 25px 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .section-title {
+      margin: 40px 0 20px;
+      font-weight: bold;
+      color: #0d6efd;
+    }
+
+    .card {
+      border: none;
+      border-radius: 20px;
+      transition: 0.3s;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .card-title {
+      font-weight: bold;
+      color: #0d6efd;
+    }
+
+    .icon {
+      font-size: 28px;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 25px 25px 0 0;
+    }
+  </style></head><body>  <!-- Header -->  <div class="header">
+    <h1>📘 Data Integrity</h1>
+    <p>Detailed Notes | Edexcel IT A2 Unit 3</p>
+  </div>  <div class="container"><!-- SECTION 1: OVERVIEW -->
+<h3 class="section-title">🔹 Overview</h3>
+<div class="row g-4">
+  <div class="col-md-6">
+    <div class="card p-3">
+      <div class="card-body">
+        <div class="icon">📊</div>
+        <h5 class="card-title">Definition</h5>
+        <p>
+          Data integrity refers to the reliability, accuracy and consistency of data 
+          throughout its lifecycle (collection → storage → usage → archiving).
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card p-3">
+      <div class="card-body">
+        <div class="icon">⭐</div>
+        <h5 class="card-title">Why It Matters</h5>
+        <ul>
+          <li>Ensures correct business decisions</li>
+          <li>Prevents misleading information</li>
+          <li>Supports data governance</li>
+          <li>Improves trust in systems</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2: COMPONENTS -->
+<h3 class="section-title">🔹 Components of Data Integrity</h3>
+<div class="row g-4">
+
+  <div class="col-md-4">
+    <div class="card p-3">
+      <h5 class="card-title">✔️ Accuracy</h5>
+      <p>Data must be correct and error-free.</p>
+      <small><b>Example:</b> Correct customer email address.</small>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card p-3">
+      <h5 class="card-title">🔁 Consistency</h5>
+      <p>Data follows the same format and rules.</p>
+      <small><b>Example:</b> Same phone number format.</small>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card p-3">
+      <h5 class="card-title">📦 Completeness</h5>
+      <p>No missing values in dataset.</p>
+      <small><b>Example:</b> Sales must include quantity sold.</small>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card p-3">
+      <h5 class="card-title">🔒 Reliability</h5>
+      <ul>
+        <li>Data available when needed</li>
+        <li>Backups ensure recovery</li>
+        <li>Validation ensures correctness</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card p-3">
+      <h5 class="card-title">🛡️ Security</h5>
+      <ul>
+        <li>Prevents unauthorised access</li>
+        <li>Protects from data corruption</li>
+        <li>Includes encryption & permissions</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<!-- SECTION 3: METHODS -->
+<h3 class="section-title">🔹 Maintaining Data Integrity</h3>
+<div class="row g-4">
+
+  <div class="col-md-6 col-lg-3">
+    <div class="card p-3">
+      <h5 class="card-title">✅ Validation</h5>
+      <p>Checks data before entry.</p>
+      <small>Prevents incorrect formats and errors.</small>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3">
+    <div class="card p-3">
+      <h5 class="card-title">💾 Backup</h5>
+      <p>Regular copies of data.</p>
+      <small>Used for recovery after failure.</small>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3">
+    <div class="card p-3">
+      <h5 class="card-title">🔑 Access Control</h5>
+      <p>Restricts access to data.</p>
+      <small>Password, permissions, encryption.</small>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3">
+    <div class="card p-3">
+      <h5 class="card-title">📋 Audit Trail</h5>
+      <p>Tracks all data changes.</p>
+      <small>Ensures accountability.</small>
+    </div>
+  </div>
+
+</div>
+
+<!-- SECTION 4: AUDIT DETAILS -->
+<h3 class="section-title">🔹 Audit Trail Details</h3>
+<div class="card p-4">
+  <ul>
+    <li><b>Timestamp:</b> Date & time of action</li>
+    <li><b>User:</b> Who performed the action</li>
+    <li><b>Action:</b> Create, edit, delete, access</li>
+    <li><b>Data Affected:</b> What was changed</li>
+    <li><b>Source:</b> System or application used</li>
+  </ul>
+</div>
+
+  </div>  <!-- Footer -->  <footer>
+    <p>© 2026 Tr. Sun | Data Integrity Notes</p>
+  </footer></body>
+</html>

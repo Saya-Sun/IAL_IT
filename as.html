@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT A2 Unit 3 Notes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0ecff, #f8fbff);
+    }.navbar {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+  font-size: 40px;
+  color: #4facfe;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.btn-custom {
+  border-radius: 30px;
+  padding: 8px 20px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  border: none;
+  color: white;
+}
+
+.btn-custom:hover {
+  opacity: 0.9;
+}
+
+  </style>
+</head>
+<body>  <!-- Navbar -->  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">IT A2 Notes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <!-- Hero Section -->  <div class="hero">
+    <h1 class="display-5">Edexcel IT A2 - Unit 3</h1>
+    <p class="lead">Interactive notes for students</p>
+  </div>  <!-- Cards Section -->  <div class="container pb-5">
+    <div class="row g-4"><div class="col-md-4">
+    <div class="card text-center">
+      <i class="bi bi-database-fill card-icon"></i>
+      <h5 class="card-title">Topic 12</h5>
+      <p>Manipulating Data</p>
+      <a href="topic12.html" class="btn btn-custom">Explore</a>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card text-center">
+      <i class="bi bi-cpu-fill card-icon"></i>
+      <h5 class="card-title">Topic 13</h5>
+      <p>Enabling Technologies</p>
+      <a href="topic13.html" class="btn btn-custom">Explore</a>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card text-center">
+      <i class="bi bi-building card-icon"></i>
+      <h5 class="card-title">Topic 14</h5>
+      <p>Using IT Systems in Organisations</p>
+      <a href="topic14.html" class="btn btn-custom">Explore</a>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card text-center">
+      <i class="bi bi-diagram-3-fill card-icon"></i>
+      <h5 class="card-title">Topic 15</h5>
+      <p>Systems Development</p>
+      <a href="topic15.html" class="btn btn-custom">Explore</a>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card text-center">
+      <i class="bi bi-lightbulb-fill card-icon"></i>
+      <h5 class="card-title">Topic 16</h5>
+      <p>Emerging Technologies</p>
+      <a href="topic16.html" class="btn btn-custom">Explore</a>
+    </div>
+  </div>
+
+</div>
+
+  </div>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  <!-- Footer -->  <footer class="mt-5" style="background: linear-gradient(to right, #4facfe, #00f2fe); color: white;">
+    <div class="container text-center py-4">
+      <h5 class="mb-2">Tr. Sun IT Learning Hub</h5>
+      <p class="mb-1">Empowering students with knowledge in Edexcel IT A2</p>
+      <small>© 2026 Tr. Sun | Designed for students with ❤️</small>
+    </div>
+  </footer>  </body>
+</html>

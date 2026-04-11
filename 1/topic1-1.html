@@ -14,51 +14,65 @@
             background: #f4f6f9;
         }
 
+        /* 🔥 SMALL CARD STYLE */
         .card {
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            max-width: 500px;
+            margin: 12px auto;
+            padding: 12px 14px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            font-size: 14px;
         }
 
         .section-title {
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 16px;
             color: #0d6efd;
+            margin-bottom: 8px;
         }
 
         .exam-tip {
             background: #fff3cd;
-            padding: 10px;
-            border-left: 5px solid #ffc107;
-            border-radius: 10px;
+            padding: 8px;
+            border-left: 4px solid #ffc107;
+            border-radius: 8px;
+            font-size: 13px;
         }
 
         .definition {
             background: #e7f1ff;
-            padding: 10px;
-            border-left: 5px solid #0d6efd;
-            border-radius: 10px;
+            padding: 8px;
+            border-left: 4px solid #0d6efd;
+            border-radius: 8px;
+            font-size: 13px;
+        }
+
+        ul {
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 8px;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container my-4">
+    <div class="container my-3">
 
-        <h1 class="text-center mb-4">📘 Device Features & Functions</h1>
+        <h2 class="text-center mb-3">📘 Device Features & Functions</h2>
 
         <!-- FEATURES vs FUNCTIONS -->
-        <div class="card p-3">
-            <h4 class="section-title">🔹 FEATURES vs FUNCTIONS (INTRO)</h4>
+        <div class="card">
+            <h5 class="section-title">🔹 FEATURES vs FUNCTIONS (INTRO)</h5>
 
-            <p>
-                <strong>Feature:</strong><br>
+            <p><strong>Feature:</strong><br>
                 • Physical or built-in part of device <br>
                 • Example: camera, touchscreen
             </p>
 
-            <p>
-                <strong>Function:</strong><br>
+            <p><strong>Function:</strong><br>
                 • What the device is used for <br>
                 • Example: calling, gaming
             </p>
@@ -69,12 +83,11 @@
             </div>
         </div>
 
-        <!-- TYPES OF DEVICES -->
-        <div class="card p-3">
-            <h4 class="section-title">🔹 TYPES OF DEVICES (INTRO)</h4>
+        <!-- TYPES -->
+        <div class="card">
+            <h5 class="section-title">🔹 TYPES OF DEVICES (INTRO)</h5>
 
             <p>You MUST know:</p>
-
             <ul>
                 <li>Computers</li>
                 <li>Peripherals</li>
@@ -84,21 +97,20 @@
             </ul>
 
             <div class="exam-tip">
-                👉 These are used in questions like:<br>
-                “Compare devices based on portability or performance”
+                👉 Compare devices based on portability or performance
             </div>
         </div>
 
-        <!-- 1 PORTABILITY -->
-        <div class="card p-3">
-            <h4 class="section-title">🔢 1. PORTABILITY</h4>
+        <!-- 1 -->
+        <div class="card">
+            <h5 class="section-title">🔢 1. PORTABILITY</h5>
 
             <div class="definition">
                 <strong>Definition:</strong><br>
                 Portability is how easy a device is to carry or move around.
             </div>
 
-            <p class="mt-2"><strong>Key Points</strong></p>
+            <p><strong>Key Points</strong></p>
             <ul>
                 <li>Smaller and lighter devices are more portable</li>
                 <li>Important for mobile devices</li>
@@ -113,243 +125,153 @@
             <p><strong>⚠️ Exam Evaluation</strong></p>
             <ul>
                 <li>✔ Easy to carry anywhere</li>
-                <li>❌ Smaller size may reduce:
-                    <ul>
-                        <li>performance</li>
-                        <li>screen size</li>
-                    </ul>
-                </li>
+                <li>❌ Smaller size may reduce performance and screen size</li>
             </ul>
         </div>
 
-        <!-- 2 PERFORMANCE -->
-        <div class="card p-3">
-            <h4 class="section-title">🔢 2. PERFORMANCE</h4>
+        <!-- 2 -->
+        <div class="card">
+            <h5 class="section-title">🔢 2. PERFORMANCE</h5>
 
             <div class="definition">
                 <strong>Definition:</strong><br>
                 Performance is how fast and efficiently a device works.
             </div>
 
-            <p class="mt-2"><strong>Key Factors</strong></p>
             <ul>
                 <li>CPU speed</li>
                 <li>RAM</li>
-                <li>Storage type (SSD faster than HDD)</li>
-            </ul>
-
-            <p><strong>Example</strong></p>
-            <ul>
-                <li>Fast computer → opens apps quickly</li>
-                <li>Slow computer → delays and lag</li>
+                <li>SSD faster than HDD</li>
             </ul>
 
             <p><strong>⚠️ Exam Evaluation</strong></p>
             <ul>
-                <li>✔ High performance improves user experience</li>
-                <li>❌ High performance devices are more expensive</li>
+                <li>✔ Better experience</li>
+                <li>❌ More expensive</li>
             </ul>
         </div>
 
-        <!-- 3 STORAGE -->
-        <div class="card p-3">
-            <h4 class="section-title">🔢 3. STORAGE</h4>
+        <!-- 3 -->
+        <div class="card">
+            <h5 class="section-title">🔢 3. STORAGE</h5>
 
             <div class="definition">
                 <strong>Definition:</strong><br>
                 Storage is the ability of a device to store data and programs.
             </div>
 
-            <p class="mt-2"><strong>Types</strong></p>
             <ul>
-                <li>HDD → large, cheaper, slower</li>
-                <li>SSD → fast, durable, expensive</li>
+                <li>HDD → cheaper, slower</li>
+                <li>SSD → faster, expensive</li>
             </ul>
 
-            <p><strong>Key Ideas</strong></p>
+            <p><strong>🔥 RAID</strong></p>
             <ul>
-                <li>Capacity (GB/TB)</li>
-                <li>Speed</li>
-                <li>Reliability</li>
-            </ul>
-
-            <p><strong>🔥 RAID (Important)</strong></p>
-            <ul>
-                <li>RAID 0 → increases performance</li>
-                <li>RAID 1 → provides backup (mirroring)</li>
+                <li>RAID 0 → speed</li>
+                <li>RAID 1 → backup</li>
             </ul>
 
             <p><strong>⚠️ Exam Evaluation</strong></p>
             <ul>
-                <li>✔ More storage = store more data</li>
-                <li>❌ Larger storage may increase cost and size</li>
+                <li>✔ More storage</li>
+                <li>❌ Higher cost</li>
             </ul>
         </div>
 
-        <!-- 4 USER INTERFACE -->
-        <div class="card p-3">
-            <h4 class="section-title">🔢 4. USER INTERFACE (UI)</h4>
+        <!-- 4 -->
+        <div class="card">
+            <h5 class="section-title">🔢 4. USER INTERFACE</h5>
 
             <div class="definition">
-                <strong>Definition:</strong><br>
                 User interface is how a user interacts with a device.
             </div>
 
-            <p class="mt-2"><strong>Types</strong></p>
             <ul>
-                <li>GUI → graphical (icons, windows)</li>
-                <li>CLI → text-based commands</li>
-            </ul>
-
-            <p><strong>Examples</strong></p>
-            <ul>
-                <li>Mouse → simple interface</li>
-                <li>Computer → complex interface</li>
+                <li>GUI</li>
+                <li>CLI</li>
             </ul>
 
             <p><strong>⚠️ Exam Evaluation</strong></p>
             <ul>
-                <li>✔ Simple UI = easy to use</li>
-                <li>❌ Complex UI = harder but more powerful</li>
+                <li>✔ Easy UI better</li>
+                <li>❌ Complex = powerful but harder</li>
             </ul>
         </div>
 
-        <!-- 5 CONNECTIVITY -->
-        <div class="card p-3">
-            <h4 class="section-title">🔢 5. CONNECTIVITY</h4>
+        <!-- 5 -->
+        <div class="card">
+            <h5 class="section-title">🔢 5. CONNECTIVITY</h5>
 
             <div class="definition">
-                <strong>Definition:</strong><br>
-                Connectivity is how devices connect and communicate with others.
+                Connectivity is how devices communicate.
             </div>
 
-            <p class="mt-2"><strong>Wired</strong></p>
-            <ul>
-                <li>USB</li>
-                <li>HDMI</li>
-                <li>VGA</li>
-            </ul>
-
-            <p><strong>Wireless</strong></p>
-            <ul>
-                <li>Wi-Fi</li>
-                <li>Bluetooth</li>
-                <li>NFC</li>
-            </ul>
-
-            <p><strong>💡 Key Exam Points</strong></p>
-            <ul>
-                <li>HDMI &gt; VGA (better quality)</li>
-                <li>USB 3 &gt; USB 2 (faster)</li>
-                <li>USB-C = modern universal standard</li>
-            </ul>
+            <p><strong>Wired:</strong> USB, HDMI, VGA</p>
+            <p><strong>Wireless:</strong> Wi-Fi, Bluetooth, NFC</p>
 
             <p><strong>⚠️ Exam Evaluation</strong></p>
             <ul>
-                <li>✔ Wired → faster, stable</li>
-                <li>✔ Wireless → flexible</li>
-                <li>❌ Wireless may be slower</li>
+                <li>✔ Wired = stable</li>
+                <li>✔ Wireless = flexible</li>
+                <li>❌ Wireless slower</li>
             </ul>
         </div>
 
-        <!-- 6 MEDIA SUPPORT -->
-        <div class="card p-3">
-            <h4 class="section-title">🔢 6. MEDIA SUPPORT</h4>
+        <!-- 6 -->
+        <div class="card">
+            <h5 class="section-title">🔢 6. MEDIA SUPPORT</h5>
 
             <div class="definition">
-                <strong>Definition:</strong><br>
-                Media support is the ability to use different storage media.
+                Media support is ability to use storage media.
             </div>
 
-            <p class="mt-2"><strong>Examples</strong></p>
             <ul>
                 <li>SD cards</li>
                 <li>USB drives</li>
-                <li>CDs/DVDs</li>
-            </ul>
-
-            <p><strong>💡 Modern Trend</strong></p>
-            <ul>
-                <li>Less optical disks</li>
-                <li>More cloud storage</li>
-            </ul>
-
-            <p><strong>⚠️ Exam Evaluation</strong></p>
-            <ul>
-                <li>✔ More support = flexible</li>
-                <li>❌ Less support = cheaper, thinner devices</li>
+                <li>CD/DVD</li>
             </ul>
         </div>
 
-        <!-- 7 ENERGY -->
-        <div class="card p-3">
-            <h4 class="section-title">🔢 7. ENERGY CONSUMPTION</h4>
+        <!-- 7 -->
+        <div class="card">
+            <h5 class="section-title">🔢 7. ENERGY</h5>
 
             <div class="definition">
-                <strong>Definition:</strong><br>
-                Energy consumption is how much power a device uses.
+                Energy consumption is power usage.
             </div>
 
-            <p class="mt-2"><strong>Importance</strong></p>
             <ul>
                 <li>Battery life</li>
-                <li>Environmental impact</li>
-            </ul>
-
-            <p><strong>⚠️ Exam Evaluation</strong></p>
-            <ul>
-                <li>✔ Low energy = longer battery life</li>
-                <li>❌ High performance uses more energy</li>
+                <li>Environment</li>
             </ul>
         </div>
 
-        <!-- 8 EXPANSION -->
-        <div class="card p-3">
-            <h4 class="section-title">🔢 8. EXPANSION CAPABILITY</h4>
+        <!-- 8 -->
+        <div class="card">
+            <h5 class="section-title">🔢 8. EXPANSION</h5>
 
             <div class="definition">
-                <strong>Definition:</strong><br>
-                Expansion capability is the ability to upgrade or add components.
+                Ability to upgrade device.
             </div>
 
-            <p class="mt-2"><strong>Examples</strong></p>
             <ul>
                 <li>Add RAM</li>
-                <li>Add storage (SD card)</li>
-            </ul>
-
-            <p><strong>⚠️ Exam Evaluation</strong></p>
-            <ul>
-                <li>✔ Expandable devices last longer</li>
-                <li>❌ Non-expandable devices are limited</li>
+                <li>Add storage</li>
             </ul>
         </div>
 
-        <!-- 9 SECURITY -->
-        <div class="card p-3">
-            <h4 class="section-title">🔢 9. SECURITY FEATURES</h4>
+        <!-- 9 -->
+        <div class="card">
+            <h5 class="section-title">🔢 9. SECURITY</h5>
 
             <div class="definition">
-                <strong>Definition:</strong><br>
-                Security features protect data and access.
+                Protects data and access.
             </div>
 
-            <p class="mt-2"><strong>Methods</strong></p>
             <ul>
                 <li>Passwords</li>
                 <li>Encryption</li>
-                <li>Biometrics (fingerprint, face recognition)</li>
-            </ul>
-
-            <p><strong>💡 Key Point</strong></p>
-            <ul>
-                <li>Biometrics are harder to hack than passwords</li>
-            </ul>
-
-            <p><strong>⚠️ Exam Evaluation</strong></p>
-            <ul>
-                <li>✔ Strong security protects data</li>
-                <li>❌ May reduce convenience</li>
+                <li>Biometrics</li>
             </ul>
         </div>
 

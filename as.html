@@ -22,9 +22,15 @@
       100% { background-position: 0% 50%; }
     }
 
+        /* HEADER */
     .navbar {
-      background: rgba(13,110,253,0.9) !important;
-      backdrop-filter: blur(10px);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 20px;
+        font-weight: bold;
+        font-family: Arial;
+
     }
 
     .hero {
@@ -79,12 +85,15 @@
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-dark">
-  <div class="container">
-    <span class="navbar-brand fw-bold">IT Unit 1 Notes</span>
-  </div>
-</nav>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+            <a class="navbar-brand fw-bold" href="index.html">Home</a>
+            <span class="navbar-text">
+                <a class="navbar-brand" href="as.html">IAL IT AS</a>
+            </span>
+        
+    </nav>
 
 <!-- Hero -->
 <div class="hero">

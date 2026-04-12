@@ -1,1 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Device Design Features</title>
 
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #d6d6d6;
+}
+
+/* Top Bar */
+header {
+  background: #1e6bd6;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+/* Section Card */
+.section {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.section h3 {
+  margin-top: 0;
+  color: #1e6bd6;
+}
+
+/* Highlight Tip */
+.tip {
+  background: #ffe6a7;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Main Title */
+.main-title {
+  text-align: center;
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+/* Feature Cards */
+.card {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+/* Number Circle */
+.number {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: #1e6bd6;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Card Title */
+.card h4 {
+  margin: 0 0 8px;
+  color: #1e6bd6;
+}
+
+/* Highlight line */
+.highlight {
+  background: #dbe8ff;
+  padding: 6px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>IGCSE IAL IT</div>
+  <div>Topic 1</div>
+</header>
+
+<div class="container">
+
+  <!-- Intro -->
+  <div class="section">
+    <h3>🔹 Features Affect Design & Use</h3>
+    <p>Device features affect size, performance, portability and usability.</p>
+
+    <div class="tip">💡 Exam Tip: Always link feature → effect</div>
+  </div>
+
+  <div class="main-title">📱 Device Features</div>
+
+  <!-- Cards -->
+
+  <div class="card">
+    <div class="number">1</div>
+    <h4>📍 GPS</h4>
+    <div class="highlight">Used for navigation and tracking</div>
+    <ul>
+      <li>Uses satellites to find location</li>
+      <li>Small hardware → easy to include</li>
+      <li>❗ Uses more battery</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="number">2</div>
+    <h4>🔐 Biometrics</h4>
+    <div class="highlight">Improves security</div>
+    <ul>
+      <li>Fingerprint / face recognition</li>
+      <li>Small size → easy to build into devices</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="number">3</div>
+    <h4>📲 Touchscreen</h4>
+    <div class="highlight">Input + Output device</div>
+    <ul>
+      <li>Saves space → smaller device</li>
+      <li>Larger display improves usability</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="number">4</div>
+    <h4>🌡️ Sensors</h4>
+    <div class="highlight">Collect data automatically</div>
+    <ul>
+      <li>Light sensor → brightness</li>
+      <li>Accelerometer → rotation</li>
+      <li>Motion sensor → steps</li>
+      <li>Temperature sensor</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="number">5</div>
+    <h4>💾 Memory</h4>
+    <div class="highlight">Affects performance</div>
+    <ul>
+      <li>RAM = temporary</li>
+      <li>ROM = permanent</li>
+      <li>More RAM → faster device</li>
+      <li>❗ Larger size needed</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="number">6</div>
+    <h4>📦 Storage</h4>
+    <div class="highlight">Stores data</div>
+    <ul>
+      <li>More storage improves performance</li>
+      <li>❗ Takes space in device</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="number">7</div>
+    <h4>🔋 Battery</h4>
+    <div class="highlight">Affects usage time</div>
+    <ul>
+      <li>Longer battery = better</li>
+      <li>❗ Bigger battery reduces portability</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="number">8</div>
+    <h4>🔬 Miniaturisation</h4>
+    <div class="highlight">Smaller but powerful devices</div>
+    <ul>
+      <li>More transistors in IC</li>
+      <li>Devices become compact</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="number">9</div>
+    <h4>⚙️ Processor</h4>
+    <div class="highlight">Controls performance</div>
+    <ul>
+      <li>Higher clock speed = faster</li>
+      <li>More cores = multitasking</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="number">10</div>
+    <h4>📡 RFID</h4>
+    <div class="highlight">Tracks items</div>
+    <ul>
+      <li>Used to locate devices</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="number">11</div>
+    <h4>📶 NFC</h4>
+    <div class="highlight">Short-range communication</div>
+    <ul>
+      <li>File sharing</li>
+      <li>Contactless payment</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="number">12</div>
+    <h4>🔳 QR Code</h4>
+    <div class="highlight">Stores data links</div>
+    <ul>
+      <li>Scan to open web pages</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="number">13</div>
+    <h4>🌐 Connectivity</h4>
+    <div class="highlight">Device connections</div>
+    <ul>
+      <li>Wireless = portable</li>
+      <li>Wired = less portable</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

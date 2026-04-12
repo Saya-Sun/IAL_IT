@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Processing Data & File Size</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #d6d6d6;
+}
+
+header {
+    background: #1e6bd6;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.section, .card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+h4 {
+    color: #1e6bd6;
+}
+
+.tip {
+    background: #ffe6a7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.highlight {
+    background: #dbe8ff;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #1e6bd6;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table-custom th {
+    background: #1e6bd6;
+    color: white;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-custom td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+footer {
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>IGCSE IAL IT</div>
+  <div>Data & File Size</div>
+</header>
+
+<div class="container">
+
+<!-- PROCESSING DATA -->
+<div class="section">
+    <h4>💻 Processing Data</h4>
+    <p>Devices process text, numbers, sound, and images.</p>
+
+    <div class="highlight">
+        All data must be converted into binary (0 and 1)
+    </div>
+
+    <ul>
+        <li>Humans → analogue</li>
+        <li>Computers → digital</li>
+    </ul>
+
+    <div class="tip">
+        💡 Always mention binary when explaining processing
+    </div>
+</div>
+
+<!-- DENARY TO BINARY -->
+<div class="section">
+    <h4>🔢 Denary to Binary</h4>
+
+    <div class="highlight">
+        Denary = base 10 | Binary = base 2
+    </div>
+
+    <p><strong>Binary values:</strong> 128, 64, 32, 16, 8, 4, 2, 1</p>
+
+    <ul>
+        <li>Start from largest value</li>
+        <li>Fit → 1 | Not fit → 0</li>
+    </ul>
+
+    <div class="card">
+        <div class="number">1</div>
+        <h4>Example: 13</h4>
+        <p>1101</p>
+    </div>
+
+    <div class="card">
+        <div class="number">2</div>
+        <h4>Example: 150</h4>
+        <p>10010110</p>
+    </div>
+
+    <div class="tip">
+        💡 Odd number → binary ends in 1
+    </div>
+</div>
+
+<!-- BINARY TO DENARY -->
+<div class="section">
+    <h4>🔁 Binary to Denary</h4>
+
+    <p>Add values where there is 1</p>
+
+    <div class="card">
+        <div class="number">1</div>
+        <h4>Example: 01011101</h4>
+        <p>64 + 16 + 8 + 4 + 1 = <strong>93</strong></p>
+    </div>
+</div>
+
+<!-- FILE SIZE -->
+<div class="section">
+    <h4>📏 Data File Size</h4>
+
+    <p>File size depends on data type:</p>
+    <ul>
+        <li>Text → small</li>
+        <li>Video/Image → large</li>
+    </ul>
+</div>
+
+<!-- TABLE -->
+<div class="section">
+    <h4>📊 Units of Measurement (IEC)</h4>
+
+    <table class="table-custom">
+        <tr>
+            <th>Unit</th>
+            <th>Equal to</th>
+        </tr>
+        <tr>
+            <td>Bit</td>
+            <td>Smallest data unit</td>
+        </tr>
+        <tr>
+            <td>Nibble</td>
+            <td>4 bits</td>
+        </tr>
+        <tr>
+            <td>Byte</td>
+            <td>8 bits</td>
+        </tr>
+        <tr>
+            <td>KiB</td>
+            <td>1024 bytes</td>
+        </tr>
+        <tr>
+            <td>MiB</td>
+            <td>1024 KiB</td>
+        </tr>
+        <tr>
+            <td>GiB</td>
+            <td>1024 MiB</td>
+        </tr>
+        <tr>
+            <td>TiB</td>
+            <td>1024 GiB</td>
+        </tr>
+    </table>
+
+    <div class="highlight">
+        Storage uses 1024
+    </div>
+</div>
+
+<!-- SI UNITS -->
+<div class="section">
+    <h4>📊 SI Units</h4>
+
+    <p>KB, MB, GB use 1000 instead of 1024</p>
+
+    <div class="highlight">
+        Network speeds use 1000
+    </div>
+</div>
+
+<!-- CALCULATIONS -->
+<div class="section">
+    <h4>🧮 File Size Calculations</h4>
+
+    <div class="card">
+        <div class="number">1</div>
+        <h4>10 KiB</h4>
+        <p>10 × 1024 = <strong>10,240 bytes</strong></p>
+    </div>
+
+    <div class="card">
+        <div class="number">2</div>
+        <h4>Text File</h4>
+        <p>3072 characters:</p>
+        <ul>
+            <li>Bytes = 3072</li>
+            <li>Bits = 24,576</li>
+            <li>Size = 3 KiB</li>
+        </ul>
+    </div>
+</div>
+
+<!-- TRANSFER TIME -->
+    <div class="section">
+    <h4>⏱ File Transfer Time</h4>
+
+    <div class="highlight text-center">
+        <div style="display:flex; align-items:center; justify-content:center; gap:12px;">
+            <strong>Time =</strong>
+            <div style="display:inline-block; text-align:center;">
+                <div style="border-bottom:2px solid black; padding:6px 14px;">
+                    File size (in bits)
+                </div>
+                <div style="padding:6px 14px;">
+                    Transfer rate (bits per second)
+                </div>
+            </div>
+        </div>
+    </div>
+
+<p class="text-center mt-2">
+    <br>
+    <strong>Example:</strong>  file size of 10 MiB in 10 Gbps connection
+</p>
+
+<div class="text-center">
+    <div style="display:inline-block; text-align:center;">
+        <div style="border-bottom:2px solid black; padding:4px 10px;">
+            (10 × 8 × 1024 × 1024)
+        </div>
+        <div style="padding:4px 10px;">
+            (10 × 1000 × 1000 × 1000)
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- SOFTWARE -->
+<div class="section">
+    <h4>💻 Software</h4>
+    <p>Software is the instructions that tell a computer what to do.</p>
+</div>
+
+
+
+</div>
+
+<footer class="bg-dark text-white text-center mt-4 p-3">
+    <small>
+        Developed by <strong>Tr. Sun</strong> | Designed for Exam Success 🚀
+    </small>
+</footer>
+
+</body>
+</html>

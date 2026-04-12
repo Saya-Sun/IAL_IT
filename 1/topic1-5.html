@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Firmware</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #d6d6d6;
+        }
+
+        header {
+            background: #1e6bd6;
+            color: white;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .section,
+        .card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .section h3,
+        .card h4 {
+            color: #1e6bd6;
+        }
+
+        .tip {
+            background: #ffe6a7;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 22px;
+            margin: 20px 0;
+        }
+
+        .number {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            background: #1e6bd6;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background: #dbe8ff;
+            padding: 6px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div><a class="navbar-brand fw-bold" href="../as.html">📘 IGCSE IAL IT</a></div>
+        <div><a class="navbar-brand" href="../topic1.html">Topic 1</a></div>
+    </header>
+
+    <div class="container">
+
+        <!-- INTRO -->
+        <div class="section">
+            <h3>🔹 What is Firmware?</h3>
+            <p>
+                Firmware is a type of software stored inside an embedded system
+                that provides the basic instructions needed for the device to function.
+            </p>
+
+            <div class="highlight">
+                Controls startup and basic input/output operations
+            </div>
+
+            <div class="tip">
+                💡 Exam Tip: Firmware = low-level control + stored on chip
+            </div>
+        </div>
+
+        <!-- FUNCTIONS -->
+        <div class="main-title">⚙️ Functions of Firmware</div>
+
+        <div class="card">
+            <div class="number">1</div>
+            <h4>🚀 Startup Control</h4>
+            <div class="highlight">Boot process</div>
+            <p>Initialises the system when powered on.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">2</div>
+            <h4>🔌 Hardware Control</h4>
+            <div class="highlight">Manages components</div>
+            <p>Controls communication between hardware parts.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">3</div>
+            <h4>📥 Input / Output</h4>
+            <div class="highlight">Basic operations</div>
+            <p>Handles simple input and output tasks.</p>
+        </div>
+
+        <!-- STORAGE -->
+        <div class="section">
+            <h3>💾 Where is Firmware Stored?</h3>
+            <ul>
+                <li>Embedded systems → stored on the chip</li>
+                <li>General-purpose computers → stored in ROM</li>
+            </ul>
+
+            <div class="highlight">
+                Embedded systems keep firmware inside the device itself
+            </div>
+        </div>
+
+        <!-- COMPONENTS -->
+        <div class="main-title">🧠 Parts of Firmware</div>
+
+        <div class="card">
+            <div class="number">1</div>
+            <h4>💻 BIOS</h4>
+            <div class="highlight">Basic Input/Output System</div>
+            <ul>
+                <li>Starts up the computer</li>
+                <li>Initialises hardware</li>
+                <li>Prepares system for OS</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="number">2</div>
+            <h4>📦 Bootloader</h4>
+            <div class="highlight">Loads operating system</div>
+            <ul>
+                <li>Runs after BIOS</li>
+                <li>Loads the OS into memory</li>
+            </ul>
+        </div>
+
+        <!-- SUMMARY -->
+        <div class="section">
+            <h3>📌 Summary</h3>
+            <p>
+                Firmware is essential software that allows devices to start, control hardware,
+                and perform basic operations before the operating system runs.
+            </p>
+        </div>
+
+    </div>
+
+    <footer class="bg-dark text-white text-center mt-4 p-3">
+        <small>
+            Developed by <strong>Tr. Sun</strong> | Designed for Exam Success 🚀
+        </small>
+    </footer>
+
+</body>
+
+</html>

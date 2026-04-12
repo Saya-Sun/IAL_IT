@@ -32,9 +32,24 @@
             font-size: 17px;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
             color: #0d6efd;
             margin-bottom: 8px;
+        }
+
+        /* BLUE-GOD NUMBER CIRCLE */
+        .number-circle {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0d6efd, #3a8bff);
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(13,110,253,0.4);
         }
 
         .exam-tip {
@@ -74,14 +89,12 @@
         <div class="container">
             <a class="navbar-brand fw-bold" href="../as.html">📘 IGCSE IAL IT</a>
             <span class="navbar-text text-white">
-               <a class="navbar-brand" href="../topic1.html">Topic 1</a>
+                <a class="navbar-brand" href="../topic1.html">Topic 1</a>
             </span>
         </div>
     </nav>
 
     <div class="container my-3">
-
-        <h2 class="text-center mb-3">📘 Device Features & Functions</h2>
 
         <!-- FEATURES vs FUNCTIONS -->
         <div class="card">
@@ -121,131 +134,125 @@
             </div>
         </div>
 
+        <h2 class="text-center mb-3">📘 Device Features & Functions</h2>
+
         <!-- PORTABILITY -->
         <div class="card">
-            <h5 class="section-title">💼 Portability</h5>
-
+            <h5 class="section-title">
+                <span class="number-circle">1</span> 💼 Portability
+            </h5>
             <div class="definition">
-                <strong>Definition:</strong><br>
                 Portability is how easy a device is to carry or move around.
             </div>
-
             <ul>
                 <li>Smaller and lighter devices are more portable</li>
-                <li>Important for mobile devices</li>
-                <li>High portability → smartphones, tablets</li>
-                <li>Low portability → desktop computers</li>
-                <li>✔ Easy to carry anywhere</li>
-                <li>❌ Smaller size may reduce performance</li>
+                <li>High → smartphones</li>
+                <li>Low → desktops</li>
+                <li>✔ Easy to carry</li>
+                <li>❌ Less performance</li>
             </ul>
         </div>
 
         <!-- PERFORMANCE -->
         <div class="card">
-            <h5 class="section-title">⚡ Performance</h5>
-
+            <h5 class="section-title">
+                <span class="number-circle">2</span> ⚡ Performance
+            </h5>
             <div class="definition">
-                Performance is how fast and efficiently a device works.
+                Performance is how fast a device works.
             </div>
-
             <ul>
-                <li>CPU speed</li>
-                <li>RAM</li>
-                <li>SSD faster than HDD</li>
-                <li>✔ Better experience</li>
-                <li>❌ More expensive</li>
+                <li>CPU, RAM</li>
+                <li>SSD faster</li>
+                <li>✔ Fast</li>
+                <li>❌ Expensive</li>
             </ul>
         </div>
 
         <!-- STORAGE -->
         <div class="card">
-            <h5 class="section-title">💾 Storage</h5>
-
+            <h5 class="section-title">
+                <span class="number-circle">3</span> 💾 Storage
+            </h5>
             <div class="definition">
-                Storage is the ability of a device to store data.
+                Storage is data capacity.
             </div>
-
             <ul>
-                <li>HDD → cheaper, slower</li>
-                <li>SSD → faster, expensive</li>
-                <li>RAID 0 → speed</li>
-                <li>RAID 1 → backup</li>
-                <li>✔ More storage</li>
-                <li>❌ Higher cost</li>
+                <li>HDD vs SSD</li>
+                <li>RAID 0 / RAID 1</li>
+                <li>✔ More data</li>
+                <li>❌ Cost</li>
             </ul>
         </div>
 
         <!-- UI -->
         <div class="card">
-            <h5 class="section-title">🖥️ User Interface</h5>
-
+            <h5 class="section-title">
+                <span class="number-circle">4</span> 🖥️ User Interface
+            </h5>
             <div class="definition">
-                User interface is how a user interacts with a device.
+                How user interacts with device.
             </div>
-
             <ul>
-                <li>GUI</li>
-                <li>CLI</li>
-                <li>✔ Easy UI better</li>
-                <li>❌ Complex = harder</li>
+                <li>GUI / CLI</li>
+                <li>✔ Easy UI</li>
+                <li>❌ Complex UI</li>
             </ul>
         </div>
 
         <!-- CONNECTIVITY -->
         <div class="card">
-            <h5 class="section-title">🌐 Connectivity</h5>
-
+            <h5 class="section-title">
+                <span class="number-circle">5</span> 🌐 Connectivity
+            </h5>
             <div class="definition">
-                Connectivity is how devices communicate.
+                How devices communicate.
             </div>
-
-            <p><strong>Wired:</strong> USB, HDMI, VGA</p>
-            <p><strong>Wireless:</strong> Wi-Fi, Bluetooth, NFC</p>
-
             <ul>
-                <li>✔ Wired = stable</li>
-                <li>✔ Wireless = flexible</li>
-                <li>❌ Wireless slower</li>
+                <li>USB, HDMI</li>
+                <li>Wi-Fi, Bluetooth</li>
+                <li>✔ Flexible</li>
+                <li>❌ Slower wireless</li>
             </ul>
         </div>
 
         <!-- MEDIA -->
         <div class="card">
-            <h5 class="section-title">🎬 Media Support</h5>
-
+            <h5 class="section-title">
+                <span class="number-circle">6</span> 🎬 Media Support
+            </h5>
             <div class="definition">
-                Media support is ability to use storage media.
+                Supports storage media.
             </div>
-
             <ul>
+                <li>USB</li>
                 <li>SD cards</li>
-                <li>USB drives</li>
                 <li>CD/DVD</li>
             </ul>
         </div>
 
         <!-- ENERGY -->
         <div class="card">
-            <h5 class="section-title">🔋 Energy</h5>
-
+            <h5 class="section-title">
+                <span class="number-circle">7</span> 🔋 Energy
+            </h5>
             <div class="definition">
-                Energy consumption is power usage.
+                Power usage.
             </div>
-
             <ul>
                 <li>Battery life</li>
-                <li>Environment</li>
+                <li>Efficiency</li>
             </ul>
         </div>
 
         <!-- EXPANSION -->
         <div class="card">
-            <h5 class="section-title">🧩 Expansion</h5>
-
+            <h5 class="section-title">
+                <span class="number-circle">8</span> 🧩 Expansion
+            </h5>
             <div class="definition">
-                Ability to upgrade device.
+                Ability to upgrade.
             </div>
-
             <ul>
                 <li>Add RAM</li>
                 <li>Add storage</li>
@@ -254,12 +261,12 @@
 
         <!-- SECURITY -->
         <div class="card">
-            <h5 class="section-title">🔒 Security</h5>
-
+            <h5 class="section-title">
+                <span class="number-circle">9</span> 🔒 Security
+            </h5>
             <div class="definition">
-                Protects data and access.
+                Protects data.
             </div>
-
             <ul>
                 <li>Passwords</li>
                 <li>Encryption</li>

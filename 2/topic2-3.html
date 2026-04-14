@@ -15,7 +15,7 @@
         }
 
         .navbar {
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
             padding: 12px 20px;
             font-weight: bold;
         }
@@ -23,6 +23,7 @@
         .container {
             max-width: 500px;
             margin: 20px auto;
+            padding: 0 10px;
         }
 
         .section {
@@ -30,7 +31,7 @@
             padding: 15px;
             border-radius: 12px;
             margin-bottom: 15px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         }
 
         .section h3 {
@@ -55,7 +56,7 @@
             padding: 15px;
             border-radius: 12px;
             margin-bottom: 15px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
             position: relative;
         }
 
@@ -80,9 +81,18 @@
 
         .highlight {
             background: #dbe8ff;
-            padding: 6px;
+            padding: 8px;
             border-radius: 6px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .card ul {
+            padding-left: 18px;
+        }
+
+        footer {
+            font-size: 14px;
         }
     </style>
 </head>
@@ -91,10 +101,12 @@
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand fw-bold" href="../as.html">📘 IGCSE IAL IT</a>
-    <span class="navbar-text">
-        <a class="navbar-brand" href="../topic2.html">Topic 2</a>
-    </span>
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="../as.html">📘 IGCSE IAL IT</a>
+        <span class="navbar-text">
+            <a class="navbar-brand" href="../topic2.html">Topic 2</a>
+        </span>
+    </div>
 </nav>
 
 <div class="container">
@@ -105,64 +117,65 @@
         <p>A network model describes how devices are structured and how they communicate.</p>
 
         <div class="tip">
-            💡 Exam Tip: Always mention <b>structure + control + examples</b>
+            💡 Exam Tip: Always include <b>structure + control + example</b>
         </div>
     </div>
+
+    <div class="main-title">📊 Network Models</div>
 
     <!-- CLIENT SERVER -->
     <div class="card">
         <div class="number">1</div>
         <h4>🖥️ Client-Server Network</h4>
 
-        <div class="highlight">Central server controls network</div>
+        <div class="highlight">Central server controls all clients</div>
 
-        <p><b>Structure:</b> Clients request services from a central server.</p>
+        <p><b>Structure:</b> Clients send requests → Server responds</p>
 
-        <p><b>Examples of servers:</b></p>
+        <p><b>Examples:</b></p>
         <ul>
-            <li>File server → stores files</li>
-            <li>Web server → hosts websites</li>
-            <li>Print server → manages printing</li>
+            <li>File server</li>
+            <li>Web server</li>
+            <li>Print server</li>
         </ul>
 
         <p><b>Advantages:</b></p>
         <ul>
             <li>Centralised security</li>
             <li>Automatic backups</li>
-            <li>Easy software updates</li>
-            <li>Clients can switch devices easily</li>
+            <li>Easy updates</li>
+            <li>Reliable performance</li>
         </ul>
 
         <p><b>Disadvantages:</b></p>
         <ul>
-            <li>Expensive setup</li>
+            <li>Expensive ❗</li>
             <li>Needs specialist staff</li>
-            <li>If server fails → network stops ❗</li>
+            <li>If server fails → network stops</li>
         </ul>
     </div>
 
-    <!-- PEER TO PEER -->
+    <!-- PEER -->
     <div class="card">
         <div class="number">2</div>
         <h4>🔗 Peer-to-Peer Network</h4>
 
         <div class="highlight">No central server • Equal devices</div>
 
-        <p><b>Structure:</b> All devices (peers) share resources directly.</p>
+        <p><b>Structure:</b> Devices share directly</p>
 
         <p><b>Advantages:</b></p>
         <ul>
-            <li>Cheap to set up</li>
-            <li>No specialist staff needed</li>
-            <li>Devices share files/resources</li>
-            <li>If one fails → others still work</li>
+            <li>Cheap</li>
+            <li>Easy to set up</li>
+            <li>No specialist needed</li>
         </ul>
 
         <p><b>Disadvantages:</b></p>
         <ul>
-            <li>Less secure ❗</li>
+            <li>Less secure</li>
             <li>No central backup</li>
-            <li>Performance drops with many devices</li>
+            <li>Slow with many devices</li>
         </ul>
     </div>
 
@@ -171,24 +184,20 @@
         <div class="number">3</div>
         <h4>📡 Ad Hoc Network</h4>
 
-        <div class="highlight">Temporary network • No infrastructure</div>
+        <div class="highlight">Temporary • No infrastructure</div>
 
-        <p><b>Structure:</b> Devices connect directly for short-term use.</p>
-
-        <p><b>Example:</b> Students sharing files in a park without Wi-Fi.</p>
+        <p><b>Use:</b> Short-term connections</p>
 
         <p><b>Advantages:</b></p>
         <ul>
-            <li>Very quick setup</li>
+            <li>Quick setup</li>
             <li>No equipment needed</li>
-            <li>Cheap</li>
         </ul>
 
         <p><b>Disadvantages:</b></p>
         <ul>
             <li>Weak security</li>
             <li>Limited size</li>
-            <li>Not all devices supported</li>
         </ul>
     </div>
 
@@ -197,47 +206,63 @@
         <div class="number">4</div>
         <h4>📱 Tethering</h4>
 
-        <div class="highlight">Phone shares internet (hotspot)</div>
+        <div class="highlight">Phone acts as hotspot</div>
 
-        <p><b>Structure:</b> Mobile phone acts as a router.</p>
-
-        <p><b>Connections:</b></p>
-        <ul>
-            <li>Wi-Fi (most common)</li>
-            <li>Bluetooth</li>
-            <li>USB</li>
-        </ul>
+        <p><b>Connections:</b> Wi-Fi, Bluetooth, USB</p>
 
         <p><b>Advantages:</b></p>
         <ul>
             <li>Internet anywhere</li>
-            <li>No need multiple data plans</li>
             <li>More secure than public Wi-Fi</li>
         </ul>
 
         <p><b>Disadvantages:</b></p>
         <ul>
-            <li>Drains battery 🔋</li>
+            <li>Drains battery</li>
             <li>Uses mobile data</li>
-            <li>Needs strong password</li>
         </ul>
     </div>
 
-    <!-- COMPARISON -->
+    <!-- TABLE -->
     <div class="section">
-        <h3>⚖️ Quick Comparison</h3>
+        <h3>📊 Comparison Table</h3>
 
-        <div class="highlight">
-            Client-Server = central control<br>
-            Peer-to-Peer = equal devices<br>
-            Ad Hoc = temporary network<br>
-            Tethering = phone hotspot
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Client-Server</th>
+                        <th>Peer-to-Peer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Control</td>
+                        <td>Central</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Security</td>
+                        <td>High</td>
+                        <td>Low</td>
+                    </tr>
+                    <tr>
+                        <td>Cost</td>
+                        <td>High</td>
+                        <td>Low</td>
+                    </tr>
+                    <tr>
+                        <td>Performance</td>
+                        <td>Stable</td>
+                        <td>Slower with many devices</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="tip">
-            💡 Exam Tip:  
-            - Large networks → Client-Server  
-            - Small/simple → Peer-to-Peer  
+            💡 VERY IMPORTANT: Client-server vs Peer-to-peer is a common exam question
         </div>
     </div>
 
@@ -250,4 +275,5 @@
 </footer>
 
 </body>
+
 </html>

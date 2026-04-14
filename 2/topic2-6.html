@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Network Protocols</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #d6d6d6;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            padding: 12px 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+
+        .section {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h3 {
+            color: #1e6bd6;
+        }
+
+        .tip {
+            background: #ffe6a7;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 22px;
+            margin: 20px 0;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .number {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            background: #1e6bd6;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .card h4 {
+            color: #1e6bd6;
+        }
+
+        .highlight {
+            background: #dbe8ff;
+            padding: 8px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .card ul {
+            padding-left: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="../as.html">📘 IGCSE IAL IT</a>
+        <span class="navbar-text">
+            <a class="navbar-brand" href="../topic2.html">Topic 2</a>
+        </span>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- INTRO -->
+    <div class="section">
+        <h3>🌐 Network Protocols</h3>
+        <p>Protocols are rules that control how data is transmitted across a network.</p>
+
+        <div class="tip">
+            💡 Exam Tip: Protocol = rules for communication between devices
+        </div>
+    </div>
+
+    <div class="main-title">📊 Types of Network Protocols</div>
+
+    <!-- OSI -->
+    <div class="card">
+        <div class="number">1</div>
+        <h4>📚 OSI Model</h4>
+
+        <div class="highlight">7-layer theoretical framework</div>
+
+        <ul>
+            <li>Developed in 1984</li>
+            <li>Divides communication into 7 layers</li>
+            <li>Each layer has a specific function</li>
+            <li>Used to understand how data travels</li>
+        </ul>
+
+        <p><b>Layers (Top → Bottom):</b></p>
+        <ul>
+            <li>7. Application → user interaction</li>
+            <li>6. Presentation → format/encrypt</li>
+            <li>5. Session → connection control</li>
+            <li>4. Transport → error checking</li>
+            <li>3. Network → routing (IP)</li>
+            <li>2. Data Link → MAC addressing</li>
+            <li>1. Physical → cables/signals</li>
+        </ul>
+
+        <div class="table-responsive" style="font-size: 14px;">
+            <table class="table table-bordered text-center">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Layer No.</th>
+                        <th>Layer Name</th>
+                        <th>Function</th>
+                        <th>Protocols / Examples</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>7</td>
+                        <td><strong>Application</strong></td>
+                        <td>User interaction, network services</td>
+                        <td>HTTP, HTTPS, FTP, SMTP</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td><strong>Presentation</strong></td>
+                        <td>Data format, encryption, compression</td>
+                        <td>SSL, TLS</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td><strong>Session</strong></td>
+                        <td>Establishes and manages sessions</td>
+                        <td>NetBIOS, RPC</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td><strong>Transport</strong></td>
+                        <td>Reliable data transfer, error checking</td>
+                        <td>TCP, UDP</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><strong>Network</strong></td>
+                        <td>Routing and addressing</td>
+                        <td>IP, ICMP</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><strong>Data Link</strong></td>
+                        <td>MAC addressing, frame transmission</td>
+                        <td>Ethernet, PPP</td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td><strong>Physical</strong></td>
+                        <td>Transmission of raw bits</td>
+                        <td>Cables, signals</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    
+
+    <!-- TCP/IP -->
+    <div class="card">
+        <div class="number">2</div>
+        <h4>🌍 TCP/IP Model</h4>
+
+        <div class="highlight">4-layer practical model (used on Internet)</div>
+
+        <ul>
+            <li>Developed by US Department of Defense</li>
+            <li>Main protocol used on the internet</li>
+            <li>More practical than OSI</li>
+        </ul>
+
+        <p><b>Layers:</b></p>
+        <ul>
+            <li>Application → combines top 3 OSI layers</li>
+            <li>Transport → uses TCP</li>
+            <li>Internet → uses IP</li>
+            <li>Link → hardware + transmission</li>
+        </ul>
+    </div>
+
+    <!-- VOIP -->
+    <div class="card">
+        <div class="number">3</div>
+        <h4>📞 VoIP</h4>
+
+        <div class="highlight">Voice communication over internet</div>
+
+        <ul>
+            <li>Converts voice → digital data</li>
+            <li>Compresses and transmits data</li>
+            <li>Used in apps like Skype, Zoom</li>
+            <li>Cheaper than traditional calls</li>
+        </ul>
+    </div>
+
+    <!-- SIP -->
+    <div class="card">
+        <div class="number">4</div>
+        <h4>📡 SIP</h4>
+
+        <div class="highlight">Controls VoIP communication</div>
+
+        <ul>
+            <li>Starts, manages and ends calls</li>
+            <li>Works with VoIP</li>
+            <li>Operates at application layer</li>
+        </ul>
+    </div>
+
+    <!-- COMPARISON -->
+    <div class="section">
+        <h3>⚖️ Key Differences</h3>
+
+        <div class="highlight">
+            OSI = theoretical model (7 layers)<br>
+            TCP/IP = real-world model (4 layers)<br>
+            VoIP = voice over internet<br>
+            SIP = manages VoIP calls
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-3">
+    <strong>Tr. Sun IT Learning Hub</strong><br>
+    <small>Designed for Exam Success 🚀</small>
+</footer>
+
+</body>
+
+</html>

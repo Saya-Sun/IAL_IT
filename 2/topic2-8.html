@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Network Security</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #d6d6d6;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            padding: 12px 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+
+        .section {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h3 {
+            color: #1e6bd6;
+        }
+
+        .tip {
+            background: #ffe6a7;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 22px;
+            margin: 20px 0;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .number {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            background: #1e6bd6;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .card h4 {
+            color: #1e6bd6;
+        }
+
+        .highlight {
+            background: #dbe8ff;
+            padding: 8px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .card ul {
+            padding-left: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="../as.html">📘 IGCSE IAL IT</a>
+        <span class="navbar-text">
+            <a class="navbar-brand" href="../topic2.html">Topic 2</a>
+        </span>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- INTRO -->
+    <div class="section">
+        <h3>🔒 Network Security</h3>
+        <p>Devices connected to a network are vulnerable to attacks and data theft.</p>
+
+        <div class="tip">
+            💡 Exam Tip: Always mention hacker + malware threats
+        </div>
+    </div>
+
+    <div class="main-title">⚠️ Security Threats</div>
+
+    <!-- THREATS -->
+    <div class="card">
+        
+        <h4>⚠️ Threats</h4>
+
+        <div class="highlight">Risks when connected to a network</div>
+
+        <ul>
+            <li>Hacking (unauthorised access)</li>
+            <li>Malware (virus, spyware, ransomware)</li>
+            <li>Fraud & identity theft</li>
+            <li>Data corruption or deletion</li>
+            <li>Open networks increase risk ❗</li>
+        </ul>
+    </div>
+
+    <div class="main-title">🛡️ Security Solutions</div>
+
+    <!-- AUTH -->
+    <div class="card">
+        <div class="number">1</div>
+        <h4>🔑 Authentication</h4>
+
+        <div class="highlight">Verifies user identity</div>
+
+        <ul>
+            <li>Password → simple login</li>
+            <li>Two-factor → extra code for security</li>
+            <li>Biometrics → fingerprint, face, iris</li>
+        </ul>
+    </div>
+
+    <!-- SETTINGS -->
+    <div class="card">
+        <div class="number">2</div>
+        <h4>⚙️ Security Settings</h4>
+
+        <div class="highlight">Control access and privacy</div>
+
+        <ul>
+            <li>Make data private</li>
+            <li>Enable two-factor authentication</li>
+            <li>Limit who can view data</li>
+        </ul>
+    </div>
+
+    <!-- ACCESS RIGHTS -->
+    <div class="card">
+        <div class="number">3</div>
+        <h4>👤 Access Rights</h4>
+
+        <div class="highlight">Limits what users can do</div>
+
+        <ul>
+            <li>Read-only or edit access</li>
+            <li>Prevents accidental damage</li>
+            <li>Reduces impact of hacking</li>
+        </ul>
+    </div>
+
+    <!-- ANTI MALWARE -->
+    <div class="card">
+        <div class="number">4</div>
+        <h4>🦠 Anti-Malware</h4>
+
+        <div class="highlight">Detects and removes malware</div>
+
+        <ul>
+            <li>Scans files and system</li>
+            <li>Deletes or quarantines threats</li>
+            <li>Must be regularly updated ❗</li>
+        </ul>
+    </div>
+
+    <!-- FIREWALL -->
+    <div class="card">
+        <div class="number">5</div>
+        <h4>🔥 Firewall</h4>
+
+        <div class="highlight">Controls incoming/outgoing traffic</div>
+
+        <ul>
+            <li>Uses rules (criteria)</li>
+            <li>Blocks suspicious data</li>
+            <li>Hardware = safer</li>
+            <li>Software = easier to install</li>
+        </ul>
+    </div>
+
+    <!-- PHYSICAL -->
+    <div class="card">
+        <div class="number">6</div>
+        <h4>🔐 Physical Security</h4>
+
+        <div class="highlight">Protects hardware</div>
+
+        <ul>
+            <li>Locks, alarms</li>
+            <li>Keycards</li>
+            <li>CCTV</li>
+        </ul>
+    </div>
+
+    <!-- ENCRYPTION -->
+    <div class="card">
+        <div class="number">7</div>
+        <h4>🔑 Encryption</h4>
+
+        <div class="highlight">Scrambles data</div>
+
+        <ul>
+            <li>Makes data unreadable</li>
+            <li>Uses encryption key</li>
+            <li>Symmetric → same key</li>
+            <li>Asymmetric → different keys</li>
+        </ul>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="section">
+        <h3>⚖️ Key Idea</h3>
+
+        <div class="highlight">
+            Authentication = who are you<br>
+            Firewall = block threats<br>
+            Encryption = protect data
+        </div>
+
+        <div class="tip">
+            💡 <b>Combine multiple security methods for best protection</b>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-3">
+    <strong>Tr. Sun IT Learning Hub</strong><br>
+    <small>Designed for Exam Success 🚀</small>
+</footer>
+
+</body>
+
+</html>

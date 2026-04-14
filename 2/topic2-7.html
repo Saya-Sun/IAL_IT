@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Addressing in a Network</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #d6d6d6;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            padding: 12px 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+
+        .section {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h3 {
+            color: #1e6bd6;
+        }
+
+        .tip {
+            background: #ffe6a7;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 22px;
+            margin: 20px 0;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .number {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            background: #1e6bd6;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .card h4 {
+            color: #1e6bd6;
+        }
+
+        .highlight {
+            background: #dbe8ff;
+            padding: 8px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .card ul {
+            padding-left: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="../as.html">📘 IGCSE IAL IT</a>
+        <span class="navbar-text">
+            <a class="navbar-brand" href="../topic2.html">Topic 2</a>
+        </span>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- INTRO -->
+    <div class="section">
+        <h3>📍 Addressing in a Network</h3>
+        <p>Devices in a network need addresses so data can be sent to the correct destination.</p>
+
+        <div class="tip">
+            💡 Exam Tip: Compare MAC vs IP (VERY common question)
+        </div>
+    </div>
+
+    <div class="main-title">🔑 Types of Addresses</div>
+
+    <!-- MAC -->
+    <div class="card">
+        <div class="number">1</div>
+        <h4>🔗 MAC Address</h4>
+
+        <div class="highlight">Physical (hardware) address of a device</div>
+
+        <ul>
+            <li>Assigned by manufacturer</li>
+            <li>Stored in NIC (Network Interface Card)</li>
+            <li>Unique for every device ❗</li>
+            <li>Written in hexadecimal (0–9, A–F)</li>
+            <li>12 digits grouped in pairs</li>
+            <li>Format: XX:XX:XX:XX:XX:XX</li>
+            <li>Example: 3C:5A:B4:01:63:D2</li>
+        </ul>
+
+        <p><b>Structure:</b></p>
+        <ul>
+            <li>First 3 pairs → Manufacturer ID</li>
+            <li>Last 3 pairs → Device serial number</li>
+        </ul>
+
+        <p><b>Use in Network:</b></p>
+        <ul>
+            <li>Used in LAN communication</li>
+            <li>Included in every data packet</li>
+            <li>Switch reads MAC address to send data to correct device</li>
+        </ul>
+
+        <div class="tip">
+            💡 Exam Tip: MAC address works at <b>Data Link Layer (Layer 2)</b>
+        </div>
+    </div>
+
+    <!-- IP -->
+    <div class="card">
+        <div class="number">2</div>
+        <h4>🌐 IP Address</h4>
+
+        <div class="highlight">Logical address used to identify a device on a network</div>
+
+        <ul>
+            <li>Assigned by router (DHCP) or ISP</li>
+            <li>Can be static (fixed) or dynamic (changes)</li>
+            <li>Used to send data between networks</li>
+            <li>Each device must have a unique IP in a network</li>
+        </ul>
+
+        <p><b>Types of IP Address:</b></p>
+        <ul>
+            <li><b>Static IP</b> → does not change</li>
+            <li><b>Dynamic IP</b> → changes when reconnecting</li>
+        </ul>
+
+        <p><b>How it works:</b></p>
+        <ul>
+            <li>IP address is added to every data packet</li>
+            <li>Router reads IP to find destination</li>
+            <li>Used for communication across networks (WAN/Internet)</li>
+        </ul>
+
+        <div class="tip">
+            💡 Exam Tip: IP address works at <b>Network Layer (Layer 3)</b>
+        </div>
+    </div>
+
+    <!-- MAC VS IP -->
+    <div class="section">
+        <h3>⚖️ MAC vs IP Address</h3>
+
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Feature</th>
+                        <th>MAC Address</th>
+                        <th>IP Address</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Type</td>
+                        <td>Physical</td>
+                        <td>Logical</td>
+                    </tr>
+
+                    <tr>
+                        <td>Assigned by</td>
+                        <td>Manufacturer</td>
+                        <td>Router / ISP</td>
+                    </tr>
+
+                    <tr>
+                        <td>Changeable</td>
+                        <td>No</td>
+                        <td>Yes (dynamic)</td>
+                    </tr>
+
+                    <tr>
+                        <td>Use</td>
+                        <td>Within LAN</td>
+                        <td>Across networks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tip">
+            💡 MAC = hardware identity, IP = network location
+        </div>
+    </div>
+
+    <!-- IPV4 -->
+    <div class="card">
+        <div class="number">3</div>
+        <h4>🌍 IPv4</h4>
+
+        <div class="highlight">32-bit address</div>
+
+        <ul>
+            <li>4 sets of numbers</li>
+            <li>Written in denary</li>
+            <li>Separated by dots</li>
+            <li>Example: 128.11.32.40</li>
+        </ul>
+    </div>
+
+    <!-- IPV6 -->
+    <div class="card">
+        <div class="number">4</div>
+        <h4>🌐 IPv6</h4>
+
+        <div class="highlight">128-bit address</div>
+
+        <ul>
+            <li>8 groups of hexadecimal numbers</li>
+            <li>Separated by colons</li>
+            <li>Much larger address space</li>
+            <li>Example: AB01:EF01:2368:BB30</li>
+        </ul>
+    </div>
+
+    <!-- IPV4 VS IPV6 -->
+    <div class="section">
+        <h3>📊 IPv4 vs IPv6</h3>
+
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Feature</th>
+                        <th>IPv4</th>
+                        <th>IPv6</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Bits</td>
+                        <td>32-bit</td>
+                        <td>128-bit</td>
+                    </tr>
+
+                    <tr>
+                        <td>Format</td>
+                        <td>Denary</td>
+                        <td>Hexadecimal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Structure</td>
+                        <td>4 numbers</td>
+                        <td>8 groups</td>
+                    </tr>
+
+                    <tr>
+                        <td>Separator</td>
+                        <td>.</td>
+                        <td>:</td>
+                    </tr>
+
+                    <tr>
+                        <td>Address Space</td>
+                        <td>Limited</td>
+                        <td>Very large</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-3">
+    <strong>Tr. Sun IT Learning Hub</strong><br>
+    <small>Designed for Exam Success 🚀</small>
+</footer>
+
+</body>
+
+</html>

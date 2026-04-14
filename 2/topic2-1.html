@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Networks - Components</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #d6d6d6;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        /* SECTION */
+        .section {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h3 {
+            color: #1e6bd6;
+        }
+
+        /* TIP BOX */
+        .tip {
+            background: #ffe6a7;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        /* TITLE */
+        .main-title {
+            text-align: center;
+            font-size: 22px;
+            margin: 20px 0;
+        }
+
+        /* CARDS */
+        .card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        /* NUMBER BADGE */
+        .number {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            background: #1e6bd6;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* CARD TITLE */
+        .card h4 {
+            color: #1e6bd6;
+        }
+
+        /* HIGHLIGHT */
+        .highlight {
+            background: #dbe8ff;
+            padding: 6px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-primary px-3">
+        <span class="navbar-brand fw-bold">📘 IGCSE IT</span>
+        <span class="text-white">Topic 2 - Networks</span>
+    </nav>
+
+    <div class="container">
+
+        <!-- INTRO -->
+        <div class="section">
+            <h3>🌐 What is a Network?</h3>
+            <p>A network is simply two or more devices that have been connected to each other.</p>
+
+            <div class="tip">💡 Exam Tip: Always define clearly + simple</div>
+        </div>
+
+        <div class="main-title">🔗 Network Components</div>
+
+        <!-- NIC -->
+        <div class="card">
+            <div class="number">1</div>
+            <h4>💻 Network Interface Card (NIC)</h4>
+            <div class="highlight">Connects device to network</div>
+            <ul>
+                <li>Built-in circuit board</li>
+                <li>Wired → Ethernet</li>
+                <li>Wireless version = WNIC</li>
+            </ul>
+        </div>
+
+        <!-- HUB -->
+        <div class="card">
+            <div class="number">2</div>
+            <h4>🔌 Hub</h4>
+            <div class="highlight">Sends data to ALL devices</div>
+            <ul>
+                <li>Creates heavy traffic</li>
+                <li>Causes collisions</li>
+                <li>Reduces performance ❗</li>
+            </ul>
+        </div>
+
+        <!-- SWITCH -->
+        <div class="card">
+            <div class="number">3</div>
+            <h4>🔀 Switch</h4>
+            <div class="highlight">Sends data to correct device only</div>
+            <ul>
+                <li>Uses MAC address</li>
+                <li>Stores device table</li>
+                <li>Reduces collisions → better performance</li>
+            </ul>
+        </div>
+
+        <!-- ROUTER -->
+        <div class="card">
+            <div class="number">4</div>
+            <h4>📡 Router</h4>
+            <div class="highlight">Finds best path for data</div>
+            <ul>
+                <li>Uses IP address</li>
+                <li>Uses routing table</li>
+                <li>Chooses best route</li>
+            </ul>
+        </div>
+
+        <!-- MODEM -->
+        <div class="card">
+            <div class="number">5</div>
+            <h4>🌍 Modem</h4>
+            <div class="highlight">Converts signals</div>
+            <ul>
+                <li>Analogue ↔ Digital</li>
+                <li>Used in internet connection</li>
+            </ul>
+        </div>
+
+        <!-- GATEWAY -->
+        <div class="card">
+            <div class="number">6</div>
+            <h4>🌐 Gateway</h4>
+            <div class="highlight">Translates between networks</div>
+            <ul>
+                <li>Different protocols</li>
+                <li>Acts like translator</li>
+            </ul>
+        </div>
+
+        <!-- BRIDGE -->
+        <div class="card">
+            <div class="number">7</div>
+            <h4>🌉 Bridge</h4>
+            <div class="highlight">Connects LANs together</div>
+            <ul>
+                <li>Creates larger LAN</li>
+                <li>Uses MAC address</li>
+            </ul>
+        </div>
+
+        <!-- REPEATER -->
+        <div class="card">
+            <div class="number">8</div>
+            <h4>📶 Repeater</h4>
+            <div class="highlight">Boosts signal strength</div>
+            <ul>
+                <li>Extends distance</li>
+                <li>Fixes weak signals</li>
+            </ul>
+        </div>
+
+        <!-- SERVER -->
+        <div class="card">
+            <div class="number">9</div>
+            <h4>🖥️ Server</h4>
+            <div class="highlight">Provides data/services</div>
+            <ul>
+                <li>Stores web pages</li>
+                <li>Handles requests</li>
+                <li>Can manage files, printing</li>
+            </ul>
+        </div>
+
+        <!-- WAP -->
+        <div class="card">
+            <div class="number">10</div>
+            <h4>📡 Wireless Access Point (WAP)</h4>
+            <div class="highlight">Provides wireless connection</div>
+            <ul>
+                <li>Uses radio signals</li>
+                <li>Works with WNIC</li>
+            </ul>
+        </div>
+
+        <!-- FINAL TIP -->
+        <div class="section">
+            <h3>⚠️ Important Note</h3>
+            <p>Many devices (like home routers) combine multiple components such as modem, router, gateway, switch and
+                WAP.</p>
+
+            <div class="tip">💡 Exam Tip: Know differences → Hub vs Switch is VERY common!</div>
+        </div>
+
+        <div class="section">
+            <h3>⚖️ Hub vs Switch</h3>
+
+        <div class="table-responsive">
+            <table class="table table-bordered text-center table-custom" style="font-size: 14px;">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Hub</th>
+                        <th>Switch</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><strong>Data Transmission</strong></td>
+                        <td>Sends data to <br> all devices</td>
+                        <td>Sends data to <br> specific device only</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Address Used</strong></td>
+                        <td>No address used</td>
+                        <td>Uses MAC address</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Traffic</strong></td>
+                        <td>High network traffic</td>
+                        <td>Low network traffic</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Collisions</strong></td>
+                        <td>More collisions</td>
+                        <td>Fewer collisions</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Performance</strong></td>
+                        <td>Slower ❗</td>
+                        <td>Faster ✅</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Intelligence</strong></td>
+                        <td>Not intelligent device</td>
+                        <td>Smart device <br> (learbrns MAC table)</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Cost</strong></td>
+                        <td>Cheaper</td>
+                        <td>More expensive</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tip">
+            💡 Exam Tip: <strong>Hub = broadcast to ALL</strong>,
+            <strong>Switch = send to ONE device</strong>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-3 mt-3">
+        <small>Designed for Exam Success 🚀</small>
+    </footer>
+
+</body>
+
+</html>

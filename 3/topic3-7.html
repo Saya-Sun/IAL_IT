@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharing Personal Data Online</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #d6d6d6;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 22px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .section {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h3 {
+            color: #1e6bd6;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .number {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            background: #1e6bd6;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .card h4 {
+            color: #1e6bd6;
+        }
+
+        .highlight {
+            background: #dbe8ff;
+            padding: 6px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .tip {
+            background: #ffe6a7;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-primary">
+        <span class="navbar-brand">📘 IGCSE IAL IT</span>
+        <div>
+            <a class="navbar-brand" href="../index.html">🏠 Home</a>
+            <a class="navbar-brand" href="../topic3.html">📂 Topic 3</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="main-title">🔐 Sharing Personal Data Online</div>
+
+        <!-- INTRO -->
+        <div class="section">
+            <h3>📌 What is Personal Data?</h3>
+            <p>
+                Personal data is any information that can identify a person,
+                such as name, address, email, location or login details.
+            </p>
+
+            <p>
+                This data is often required when creating accounts or using online services.
+            </p>
+
+            <div class="tip">
+                💡 Exam Tip: Personal data = identifiable information
+            </div>
+        </div>
+
+        <!-- RISKS -->
+        <div class="main-title">⚠️ Security Risks</div>
+
+        <div class="card">
+            <div class="number">1</div>
+            <h4>👁️ Data Exposure</h4>
+            <div class="highlight">Public access to personal data</div>
+            <p>
+                If privacy settings are weak, third parties can collect information
+                and build a profile of a user.
+            </p>
+            <p><strong>Impact:</strong> Identity theft and fraud</p>
+        </div>
+
+        <div class="card">
+            <div class="number">2</div>
+            <h4>💻 Hacking</h4>
+            <div class="highlight">Unauthorised access</div>
+            <p>
+                Hackers may break into systems and steal user data or take control of accounts.
+            </p>
+            <p><strong>Impact:</strong> Financial loss or criminal activity</p>
+        </div>
+
+        <div class="card">
+            <div class="number">3</div>
+            <h4>📉 Data Breach</h4>
+            <div class="highlight">Poor security by organisations</div>
+            <p>
+                If companies fail to protect data, large amounts of personal data can be leaked.
+            </p>
+            <p><strong>Impact:</strong> Loss of privacy for many users</p>
+        </div>
+
+        <div class="card">
+            <div class="number">4</div>
+            <h4>🎣 Phishing</h4>
+            <div class="highlight">Fake messages to steal data</div>
+            <p>
+                Users are tricked into entering personal details into fake websites or emails.
+            </p>
+            <p><strong>Example:</strong> Fake bank email asking for login details</p>
+        </div>
+
+        <!-- PROTECTION -->
+        <div class="main-title">🛡️ Protection Methods</div>
+
+        <div class="card">
+            <div class="number">1</div>
+            <h4>🔑 Strong Passwords</h4>
+            <div class="highlight">Hard to guess</div>
+            <p>Use long, complex passwords with symbols and mixed characters.</p>
+            <p><strong>Benefit:</strong> Reduces risk of hacking</p>
+        </div>
+
+        <div class="card">
+            <div class="number">2</div>
+            <h4>🧬 Biometrics</h4>
+            <div class="highlight">Unique biological data</div>
+            <p>Fingerprint or face recognition is harder to copy or guess.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">3</div>
+            <h4>🔐 Encryption</h4>
+            <div class="highlight">Scrambles data</div>
+            <p>
+                Data is converted into unreadable form and can only be accessed with a key.
+            </p>
+            <p><strong>Example:</strong> HTTPS, VPN</p>
+        </div>
+
+        <div class="card">
+            <div class="number">4</div>
+            <h4>🔥 Firewall</h4>
+            <div class="highlight">Filters network traffic</div>
+            <p>Blocks malicious access and protects devices.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">5</div>
+            <h4>🔍 Check Emails & URLs</h4>
+            <div class="highlight">Avoid scams</div>
+            <p>Verify sender and links before entering personal data.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">6</div>
+            <h4>🔒 Privacy Settings</h4>
+            <div class="highlight">Control who sees your data</div>
+            <p>
+                Limit visibility and be careful about what you share online.
+            </p>
+        </div>
+
+        <!-- EVALUATION -->
+        <div class="section">
+            <h3>⚖️ Evaluation</h3>
+            <ul>
+                <li>✔ Online services require personal data</li>
+                <li>✔ Useful for accounts and services</li>
+                <li>❗ Risk of misuse and cybercrime</li>
+                <li>❗ Strong security measures are essential</li>
+            </ul>
+        </div>
+
+        <!-- MEMORY -->
+        <div class="section">
+            <h3>🧠 Quick Memory</h3>
+            <ul>
+                <li>Risks → hacking, phishing, breach</li>
+                <li>Protection → password, encryption, firewall</li>
+                <li>Always verify links & control privacy</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <strong>Tr. Sun IT Learning Hub</strong><br>
+        <small>Designed for Exam Success 🚀</small>
+    </footer>
+
+</body>
+
+</html>

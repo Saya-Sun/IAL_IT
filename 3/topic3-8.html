@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cloud</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #d6d6d6;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 22px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .section {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h3 {
+            color: #1e6bd6;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .number {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            background: #1e6bd6;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .card h4 {
+            color: #1e6bd6;
+        }
+
+        .highlight {
+            background: #dbe8ff;
+            padding: 6px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .tip {
+            background: #ffe6a7;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .table-custom th {
+            background: #1e6bd6;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-primary">
+        <span class="navbar-brand">📘 IGCSE IAL IT</span>
+        <div>
+            <a class="navbar-brand" href="../index.html">🏠 Home</a>
+            <a class="navbar-brand" href="../topic3.html">📂 Topic 3</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- TITLE -->
+        <div class="main-title">☁️ The Cloud</div>
+
+        <!-- CLOUD STORAGE -->
+        <div class="section">
+            <h3>📦 Cloud Storage</h3>
+
+            <div class="highlight">Data stored on remote servers</div>
+
+            <p>
+                Cloud storage is a method of storing data on remote servers
+                that are accessed via the internet, instead of storing data locally on a device.
+            </p>
+
+            <p><strong>Key Idea:</strong> Data is stored by a third-party provider</p>
+
+            <div class="tip">
+                💡 Exam Tip: Cloud storage = remote storage via internet
+            </div>
+        </div>
+
+        <!-- CLOUD COMPUTING -->
+        <div class="section">
+            <h3>💻 Cloud Computing</h3>
+
+            <div class="highlight">Storage + services (software & resources)</div>
+
+            <p>
+                Cloud computing includes cloud storage along with additional services
+                such as software, processing power and backups.
+            </p>
+        </div>
+
+        <!-- EXAMPLES -->
+        <div class="section">
+            <h3>📱 Examples</h3>
+            <ul>
+                <li><strong>Microsoft 365</strong> – Word, Excel online</li>
+                <li><strong>iCloud</strong> – stores photos, files, contacts</li>
+            </ul>
+        </div>
+
+        <!-- ADVANTAGES -->
+        <div class="main-title">✅ Advantages</div>
+
+        <div class="card">
+            <div class="number">1</div>
+            <h4>💰 Cost Saving</h4>
+            <div class="highlight">No need for hardware</div>
+            <p>Users do not need to buy expensive storage devices.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">2</div>
+            <h4>👨‍💻 Less Maintenance</h4>
+            <div class="highlight">No technical staff needed</div>
+            <p>Cloud provider manages hardware and systems.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">3</div>
+            <h4>🌍 Accessibility</h4>
+            <div class="highlight">Access anywhere</div>
+            <p>Data can be accessed from any device with internet.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">4</div>
+            <h4>💾 Backup</h4>
+            <div class="highlight">Automatic backups</div>
+            <p>Data is regularly backed up by the provider.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">5</div>
+            <h4>🔄 Updates</h4>
+            <div class="highlight">Automatic software updates</div>
+            <p>Users always have the latest version.</p>
+        </div>
+
+        <!-- DISADVANTAGES -->
+        <div class="main-title">⚠️ Disadvantages</div>
+
+        <div class="card">
+            <div class="number">1</div>
+            <h4>💳 Cost</h4>
+            <div class="highlight">Subscription fees</div>
+            <p>Large storage or services require payment.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">2</div>
+            <h4>🔓 Security Risks</h4>
+            <div class="highlight">Trust provider</div>
+            <p>Data may be hacked or misused if security is weak.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">3</div>
+            <h4>🌐 Internet Dependence</h4>
+            <div class="highlight">Requires connection</div>
+            <p>Cannot access data without internet or with poor connection.</p>
+        </div>
+
+        <!-- MEMORY -->
+        <div class="section">
+            <h3>🧠 Quick Memory</h3>
+            <ul>
+                <li>Cloud storage → remote data</li>
+                <li>Cloud computing → storage + services</li>
+                <li>+ Access anywhere</li>
+                <li>– Needs internet</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-3">
+        <strong>Tr. Sun IT Learning Hub</strong><br>
+        <small>Designed for Exam Success 🚀</small>
+    </footer>
+
+</body>
+
+</html>

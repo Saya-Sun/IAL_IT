@@ -4,42 +4,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Networks - Components</title>
+    <title>The Internet & WWW</title>
 
 
-<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
+        font-family: Arial;
         background: #d6d6d6;
     }
 
-    /* NAVBAR */
     .navbar {
         box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        display: flex;
+        justify-content: space-between;
         padding: 12px 20px;
         font-weight: bold;
     }
 
-    /* CONTAINER */
     .container {
         max-width: 500px;
         margin: 20px auto;
     }
 
-    /* TITLE */
-    .main-title {
-        text-align: center;
-        font-size: 24px;
-        font-weight: bold;
-        margin: 20px 0;
-    }
-
-    /* SECTION */
     .section {
         background: #f4f4f4;
         padding: 15px;
@@ -50,10 +39,15 @@
 
     .section h3 {
         color: #1e6bd6;
-        margin-bottom: 10px;
     }
 
-    /* CARDS */
+    .main-title {
+        text-align: center;
+        font-size: 22px;
+        margin: 20px 0;
+        font-weight: bold;
+    }
+
     .card {
         background: #f4f4f4;
         padding: 15px;
@@ -61,14 +55,13 @@
         margin-bottom: 15px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         position: relative;
-        transition: all 0.2s ease;
+        transition: 0.2s;
     }
 
     .card:hover {
-        transform: translateY(-4px);
+        transform: translateY(-3px);
     }
 
-    /* NUMBER BADGE */
     .number {
         position: absolute;
         top: -10px;
@@ -86,10 +79,8 @@
 
     .card h4 {
         color: #1e6bd6;
-        margin-bottom: 8px;
     }
 
-    /* HIGHLIGHT */
     .highlight {
         background: #dbe8ff;
         padding: 6px;
@@ -98,23 +89,11 @@
         font-weight: bold;
     }
 
-    /* TIP BOX */
     .tip {
         background: #ffe6a7;
         padding: 10px;
         border-radius: 8px;
         margin-top: 10px;
-    }
-
-    /* TABLE */
-    .table-custom th {
-        background: #1e6bd6;
-        color: white;
-    }
-
-    /* FOOTER */
-    footer {
-        margin-top: 20px;
     }
 
 </style>
@@ -126,191 +105,232 @@
 
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-        <span class="navbar-brand">📘 IGCSE IAL IT</span>
-        <div>
-            <a class="navbar-brand" href="../index.html">🏠 Home</a>
-            <a class="navbar-brand" href="../topic2.html">Topic 2</a>
-        </div>
+<nav class="navbar navbar-dark bg-primary">
+    <span class="navbar-brand">📘 IGCSE IAL IT</span>
+    <div>
+        <a class="navbar-brand" href="../index.html">🏠 Home</a>
+        <a class="navbar-brand" href="../topic3.html">📂 Topic 3</a>
     </div>
 </nav>
 
 <div class="container">
 
-    <!-- PAGE TITLE -->
-    <div class="main-title">🌐 Network Components</div>
+    <!-- TITLE -->
+    <div class="main-title">🌐 Internet vs World Wide Web</div>
 
-    <!-- INTRO -->
+    <!-- DIFFERENCE -->
     <div class="section">
-        <h3>What is a Network?</h3>
-        <p>A network is two or more devices connected together to share data and resources.</p>
+        <h3>📌 Key Difference</h3>
+        <p><strong>Internet:</strong> The physical infrastructure used to send data worldwide.</p>
+        <p><strong>World Wide Web (WWW):</strong> The collection of web pages accessed using the internet.</p>
 
         <div class="tip">
-            💡 Exam Tip: Always include <strong>"share data/resources"</strong> in your definition.
+            💡 Exam Tip: Internet = infrastructure, WWW = web pages
         </div>
     </div>
 
-    <!-- COMPONENT CARDS -->
+    <!-- PROCESS -->
+    <div class="section">
+        <h3>🌍 How a Web Page is Accessed</h3>
+
+        <div class="highlight">Step-by-step</div>
+
+        <ol>
+            <li>User enters URL</li>
+            <li>DNS converts domain → IP</li>
+            <li>Browser sends request</li>
+            <li>Server sends web page</li>
+        </ol>
+
+        <div class="tip">
+            💡 Exam Tip: Mention DNS + IP conversion
+        </div>
+    </div>
+
+    <!-- DNS -->
     <div class="card">
         <div class="number">1</div>
-        <h4>💻 Network Interface Card (NIC)</h4>
-        <div class="highlight">Connects a device to a network</div>
+
+        <!-- DNS DETAILED SECTION -->
+        <h3>🌐 DNS (Domain Name System)</h3>
+
+        <div class="highlight">Converts domain names into IP addresses</div>
+
+        <p>
+            DNS is a system that translates human-readable website names (like
+            <strong>www.google.com</strong>) into IP addresses that computers use to locate servers.
+        </p>
+
+        <h4>🔄 How DNS Works (Step-by-Step)</h4>
+        <ol>
+            <li>User enters a URL into the browser</li>
+            <li>Browser extracts the domain name</li>
+            <li>Request sent to a DNS server</li>
+            <li>If not found → forwarded up the DNS hierarchy</li>
+            <li>Root server helps locate correct DNS server</li>
+            <li>Correct IP address is returned</li>
+            <li>Browser connects to web server using IP</li>
+        </ol>
+
+        <h4>🏗️ DNS Hierarchy</h4>
         <ul>
-            <li>Built-in hardware</li>
-            <li>Wired (Ethernet) or Wireless (WNIC)</li>
+            <li><strong>Local DNS Server</strong> – first point of contact</li>
+            <li><strong>Root DNS Server</strong> – top-level server</li>
+            <li><strong>Authoritative DNS Server</strong> – stores actual domain records</li>
         </ul>
+
+        <h4>⚡ Why DNS is Important</h4>
+        <ul>
+            <li>Humans remember names, not IP addresses</li>
+            <li>Makes the internet user-friendly</li>
+            <li>Enables fast access to websites</li>
+        </ul>
+
+        <div class="tip">
+            💡 Exam Tip: DNS = <strong>Domain Name → IP Address</strong> 
+        </div>
     </div>
 
+    <!-- SERVER -->
     <div class="card">
         <div class="number">2</div>
-        <h4>🔌 Hub</h4>
-        <div class="highlight">Broadcasts data to all devices</div>
+        <h4>🖥️ Web Server</h4>
+        <div class="highlight">Stores and sends pages</div>
+        <p> A web server is a computer that stores web pages and sends them to users when requested by a web browser. </p>
+        <!-- WEB SERVER FEATURES -->
+        
         <ul>
-            <li>High traffic</li>
-            <li>Many collisions</li>
-            <li>Poor performance</li>
+            <li><strong>Stores web content</strong> – holds HTML pages, images, videos and files</li>
+            <li><strong>Handles requests</strong> – receives requests from web browsers and responds</li>
+            <li><strong>Uses HTTP/HTTPS</strong> – communicates using standard web protocols</li>
+            <li><strong>Has a unique IP address</strong> – allows it to be identified on the internet</li>
         </ul>
     </div>
 
+
+
+    <!-- URL -->
     <div class="card">
         <div class="number">3</div>
-        <h4>🔀 Switch</h4>
-        <div class="highlight">Sends data to the correct device only</div>
+        <h4>🔗 URL (Uniform Resource Locator)</h4>
+        <div class="highlight">The address used to locate a web page or resource on the internet</div>
+        <p>
+            A URL is what a user types into a web browser to access a specific web page.
+            Example: <strong>https://www.pearson.com/index.html</strong>
+        </p>
+
+        <h4>🧩 Structure of a URL</h4>
         <ul>
-            <li>Uses MAC address</li>
-            <li>Learns MAC address table</li>
-            <li>Fewer collisions → faster</li>
+            <li><strong>Protocol:</strong> https:// → defines how data is transferred</li>
+            <li><strong>Domain Name:</strong> www.pearson.com → identifies the website</li>
+            <li><strong>Path:</strong> /index.html → specifies the exact page/resource</li>
         </ul>
-    </div>
 
-    <div class="card">
-        <div class="number">4</div>
-        <h4>📡 Router</h4>
-        <div class="highlight">Chooses best path for data</div>
+        <h4>🔍 Explanation</h4>
         <ul>
-            <li>Uses IP address</li>
-            <li>Routing table</li>
+            <li><strong>Protocol (HTTP/HTTPS)</strong> – rules used for communication</li>
+            <li><strong>Domain Name</strong> – human-readable name converted by DNS</li>
+            <li><strong>Path/File Name</strong> – location of the resource on the server</li>
         </ul>
-    </div>
 
-    <div class="card">
-        <div class="number">5</div>
-        <h4>🌍 Modem</h4>
-        <div class="highlight">Converts analogue ↔ digital signals</div>
-    </div>
-
-    <div class="card">
-        <div class="number">6</div>
-        <h4>🌐 Gateway</h4>
-        <div class="highlight">Translates between different networks</div>
-    </div>
-
-    <div class="card">
-        <div class="number">7</div>
-        <h4>🌉 Bridge</h4>
-        <div class="highlight">Connects LANs together</div>
-    </div>
-
-    <div class="card">
-        <div class="number">8</div>
-        <h4>📶 Repeater</h4>
-        <div class="highlight">Boosts signal strength</div>
-    </div>
-
-    <div class="card">
-        <div class="number">9</div>
-        <h4>🖥️ Server</h4>
-        <div class="highlight">Provides data and services</div>
-    </div>
-
-    <div class="card">
-        <div class="number">10</div>
-        <h4>📡 Wireless Access Point (WAP)</h4>
-        <div class="highlight">Provides wireless network access</div>
-    </div>
-
-    <!-- DIAGRAM -->
-    <div class="section">
-        <h3>📊 Simple Network Flow</h3>
-        <p><strong>Devices → Switch → Router → Internet</strong></p>
-    </div>
-
-    <!-- HUB VS SWITCH -->
-    <div class="section">
-        <h3>⚖️ Hub vs Switch</h3>
-
-        <div class="table-responsive">
-            <table class="table table-bordered text-center table-custom">
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Hub</th>
-                        <th>Switch</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Transmission</td>
-                        <td>All devices</td>
-                        <td>Specific device</td>
-                    </tr>
-                    <tr>
-                        <td>Address Used</td>
-                        <td>None</td>
-                        <td>MAC address</td>
-                    </tr>
-                    <tr>
-                        <td>Traffic</td>
-                        <td>High</td>
-                        <td>Low</td>
-                    </tr>
-                    <tr>
-                        <td>Collisions</td>
-                        <td>Many</td>
-                        <td>Few</td>
-                    </tr>
-                    <tr>
-                        <td>Performance</td>
-                        <td>Slow</td>
-                        <td>Fast</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <h4>⚡ Why URLs are Important</h4>
+        <ul>
+            <li>Allow users to easily access web pages</li>
+            <li>Provide a unique address for each resource</li>
+            <li>Work with DNS to locate servers</li>
+        </ul>
 
         <div class="tip">
-            💡 Exam Tip: Hub = broadcast to ALL, Switch = send to ONE device using MAC address.
+            💡 Exam Tip: URL = <strong>Protocol + Domain Name + Path</strong>
         </div>
     </div>
 
-    <!-- MEMORY SUMMARY -->
+    <!-- WWW FEATURES DETAILED -->
     <div class="section">
-        <h3>🧠 Quick Memory Summary</h3>
-        <ul>
-            <li>NIC → Connects device</li>
-            <li>Hub → Sends to ALL</li>
-            <li>Switch → Sends to ONE</li>
-            <li>Router → Finds best path</li>
-            <li>Modem → Converts signals</li>
-            <li>WAP → Wireless access</li>
-        </ul>
-    </div>
-
-    <!-- FINAL TIP -->
-    <div class="section">
-        <h3>⚠️ Important Note</h3>
-        <p>Modern home routers often combine multiple devices such as router, switch, modem, gateway, and WAP.</p>
-
-        <div class="tip">
-            💡 Exam Tip: Questions often test device differences (especially Hub vs Switch).
+        <h3 style="font-size: 24px;">✨ Features of the World Wide Web</h3>
+        <br>
+        <!-- HYPERTEXT -->
+        <div class="card">
+            <div class="number">1</div>
+            <h4>🔗 Hypertext</h4>
+            <div class="highlight">Links between pages and resources</div>
+            <p>
+                Hypertext allows users to click links to move between web pages, documents,
+                or media such as videos. It makes navigation fast and interactive.
+            </p>
+            <p><strong>Example:</strong> Clicking a link to open another website.</p>
         </div>
+
+        <!-- CROSS PLATFORM -->
+        <div class="card">
+            <div class="number">2</div>
+            <h4>📱 Cross Platform</h4>
+            <div class="highlight">Works on different devices and systems</div>
+            <p>
+                The WWW can be accessed on many devices such as computers, smartphones,
+                tablets, smart TVs and gaming consoles.
+            </p>
+            <p><strong>Benefit:</strong> Users can access the web anywhere.</p>
+        </div>
+
+        <!-- DISTRIBUTED -->
+        <div class="card">
+            <div class="number">3</div>
+            <h4>🌍 Distributed</h4>
+            <div class="highlight">Data is stored across many servers worldwide</div>
+            <p>
+                The WWW is not stored in one place. Instead, it is spread across many servers
+                in different locations, reducing traffic and improving performance.
+            </p>
+            <p><strong>Benefit:</strong> Faster access and better reliability.</p>
+        </div>
+
+        <!-- OPEN STANDARDS -->
+        <div class="card">
+            <div class="number">4</div>
+            <h4>📏 Open Standards</h4>
+            <div class="highlight">Shared rules for communication</div>
+            <p>
+                The WWW uses open standards such as HTML and HTTP so that different systems
+                and devices can communicate with each other.
+            </p>
+            <p><strong>Managed by:</strong> Internet organisations.</p>
+        </div>
+
+        <!-- DYNAMIC -->
+        <div class="card">
+            <div class="number">5</div>
+            <h4>🔄 Dynamic</h4>
+            <div class="highlight">Content is constantly updated</div>
+            <p>
+                Web pages are regularly updated and can change based on user input,
+                making the web interactive and current.
+            </p>
+            <p><strong>Example:</strong> Social media feeds updating in real time.</p>
+        </div>
+
+        <!-- WEB 2.0 -->
+        <div class="card">
+            <div class="number">6</div>
+            <h4>👥 Web 2.0</h4>
+            <div class="highlight">Users create and share content</div>
+            <p>
+                Web 2.0 allows users to contribute content such as posts, comments,
+                videos and blogs, making the web interactive and social.
+            </p>
+
+            <ul>
+                <li><strong>Web 1.0:</strong> Read-only (users only view content)</li>
+                <li><strong>Web 2.0:</strong> Read + write (users create content)</li>
+            </ul>
+        </div>
+
     </div>
 
 </div>
 
 <!-- FOOTER -->
-<footer class="bg-dark text-white text-center p-3">
+<footer class="bg-dark text-white text-center p-3 mt-3">
     <strong>Tr. Sun IT Learning Hub</strong><br>
     <small>Designed for Exam Success 🚀</small>
 </footer>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Decomposition of Systems</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #d6d6d6;
+}
+
+.navbar {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.section {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.section h3 {
+    color: #1e6bd6;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #1e6bd6;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.card h4 {
+    color: #1e6bd6;
+}
+
+.highlight {
+    background: #dbe8ff;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.tip {
+    background: #ffe6a7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-primary">
+    <span class="navbar-brand">📘 IGCSE IT</span>
+    <div>
+        <a class="navbar-brand" href="../index.html">🏠 Home</a>
+        <a class="navbar-brand" href="../topic4.html">📂 Topic 4</a>
+    </div>
+</nav>
+
+<div class="container">
+
+<!-- TITLE -->
+<div class="main-title">🧩 Decomposition of Systems</div>
+
+<!-- INTRO -->
+<div class="section">
+    <h3>📌 What is Decomposition?</h3>
+    <p>
+        Decomposition is the process of breaking a large IT system into smaller parts called sub-systems.
+    </p>
+</div>
+
+<!-- WHY -->
+<div class="card">
+    <h4><i class="bi bi-lightbulb"></i> Why Decompose?</h4>
+    <div class="highlight">Makes systems easier to manage</div>
+
+    <ul>
+        <li>Simplifies complex systems</li>
+        <li>Makes design and development easier</li>
+        <li>Helps identify errors quickly</li>
+        <li>Allows testing of each part separately</li>
+    </ul>
+
+    <div class="tip">
+        💡 Exam Tip: Decomposition = breaking system into smaller parts
+    </div>
+</div>
+
+<!-- SUBSYSTEM -->
+<div class="card">
+    <h4><i class="bi bi-diagram-3"></i> Sub-systems</h4>
+    <div class="highlight">Smaller parts of a system</div>
+
+    <p>
+        Each sub-system performs a specific task and works together to complete the whole system.
+    </p>
+</div>
+
+<!-- EXAMPLE -->
+    <h3 style="font-size: 25px;">✈️ Example: Airport Check-in System</h3>
+
+       
+<div class="card">
+    <div class="number">1</div>
+    <h4>⚖️ Weighing Luggage</h4>
+    <div class="highlight">Measure luggage weight</div>
+
+   
+    <ul>
+        <li>Send data to system</li>
+        <li>Check weight limits</li>
+    </ul>
+</div>
+
+<div class="card">
+    <div class="number">2</div>
+    <h4>🎫 Scanning Boarding Pass</h4>
+    <div class="highlight">Scan barcode</div>
+
+
+    <ul>
+        <li>Retrieve passenger data</li>
+        <li>Confirm check-in</li>
+    </ul>
+</div>
+
+<!-- SUB-SYSTEM: PRINTING LABEL -->
+
+<div class="card">
+    <div class="number">3</div>
+    <h4>🏷️ Printing Luggage Label</h4>
+    <div class="highlight">Generates and prints baggage tag</div>
+
+    <ul>
+        <li>Includes passenger and flight details</li>
+        <li>Printer prints the label</li>
+        <li>Label is attached to luggage</li>
+    </ul>
+
+    <div class="tip">
+        💡 Exam Tip: Sub-system = input → process → output
+    </div>
+</div>
+
+<!-- SUMMARY -->
+<div class="section">
+    <h3>🧠 Summary</h3>
+    <p>
+        Decomposition helps break large systems into manageable sub-systems, making them easier to design, test, and understand.
+    </p>
+
+    <div class="tip">
+        💡 Exam Tip: System → Sub-system → Task
+    </div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-3">
+    <strong>Tr. Sun IT Learning Hub</strong><br>
+    <small>Designed for Exam Success 🚀</small>
+</footer>
+
+</body>
+</html>

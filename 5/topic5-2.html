@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Structured vs Unstructured Data</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #d6d6d6;
+}
+
+.navbar {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.section {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.section h3 {
+    color: #1e6bd6;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #1e6bd6;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.card h4 {
+    color: #1e6bd6;
+}
+
+.highlight {
+    background: #dbe8ff;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.tip {
+    background: #ffe6a7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-primary">
+    <span class="navbar-brand">📘 IGCSE IT</span>
+    <div>
+        <a class="navbar-brand" href="../index.html">🏠 Home</a>
+        <a class="navbar-brand" href="../topic5.html">📂 Topic 5</a>
+    </div>
+</nav>
+
+<div class="container">
+
+<!-- TITLE -->
+<div class="main-title">📂 Structured vs Unstructured Data</div>
+
+<!-- STRUCTURED -->
+<div class="card">
+    <div class="number">1</div>
+    <h4><i class="bi bi-table"></i> Structured Data</h4>
+    <div class="highlight">Organised with a fixed format</div>
+
+    <ul>
+        <li>Stored in databases or tables</li>
+        <li>Has a clear structure (e.g. rows and columns)</li>
+        <li>Easy to search, sort, and analyse</li>
+    </ul>
+
+    <h6>📌 Examples</h6>
+    <ul>
+        <li>Product price: $1.95</li>
+        <li>Email date and time</li>
+        <li>Spreadsheet data</li>
+    </ul>
+
+    <h6>🤖 Use in AI</h6>
+    <p>
+        Machine learning uses structured data (e.g. plant colour, height, type) to learn patterns.
+    </p>
+</div>
+
+<!-- UNSTRUCTURED -->
+<div class="card">
+    <div class="number">2</div>
+    <h4><i class="bi bi-file-text"></i> Unstructured Data</h4>
+    <div class="highlight">No fixed format</div>
+
+    <ul>
+        <li>Mixed types of data</li>
+        <li>Harder to search and analyse</li>
+        <li>Often qualitative</li>
+    </ul>
+
+    <h6>📌 Examples</h6>
+    <ul>
+        <li>Email message content</li>
+        <li>Social media posts</li>
+        <li>Images, videos</li>
+    </ul>
+</div>
+
+<!-- COMPARISON -->
+<div class="section">
+    <h3>⚖️ Comparison</h3>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-custom">
+            <thead class="table-dark">
+                <tr>
+                    <th>Feature</th>
+                    <th>Structured</th>
+                    <th>Unstructured</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Format</td>
+                    <td>Fixed</td>
+                    <td>No fixed format</td>
+                </tr>
+                <tr>
+                    <td>Search</td>
+                    <td>Easy</td>
+                    <td>Difficult</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>Databases</td>
+                    <td>Files, media</td>
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td>Quantitative</td>
+                    <td>Often qualitative</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- SCHOOL SYSTEM EXAMPLE -->
+
+<div class="section">
+    <h3 style="font-size: 28px;">🏫 School Management System</h3>
+    <!-- STRUCTURED -->
+    <div class="card">
+        <div class="number">i</div>
+        <h4><i class="bi bi-table"></i> Structured Data</h4>
+        <div class="highlight">Organised and easy to search</div>
+
+        <ul>
+            <li>Student ID (e.g. 2025-001)</li>
+            <li>Student name</li>
+            <li>Class (e.g. Year 10)</li>
+            <li>Exam marks (e.g. 85%)</li>
+            <li>Attendance records</li>
+        </ul>
+
+        <p>
+            These are stored in databases and can be easily searched, sorted, and analysed.
+        </p>
+    </div>
+
+    <!-- UNSTRUCTURED -->
+    <div class="card">
+        <div class="number">ii</div>
+        <h4><i class="bi bi-file-text"></i> Unstructured Data</h4>
+        <div class="highlight">No fixed format</div>
+
+        <ul>
+            <li>Teacher comments about students</li>
+            <li>Emails between teachers and parents</li>
+            <li>Student essays or projects</li>
+            <li>Photos or videos of school events</li>
+        </ul>
+
+        <p>
+            These are harder to search and analyse because they do not follow a fixed structure.
+        </p>
+
+        
+    </div>
+    <div class="tip">
+            💡 Exam Tip: <br> Database = structured, <br> text/media = unstructured
+    </div>
+</div>
+
+
+<!-- SUMMARY -->
+<div class="section">
+    <h3>🧠 Summary</h3>
+    <p>
+        Structured data is organised and easy to analyse, while unstructured data is flexible but harder to process.
+    </p>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-3">
+    <strong>Tr. Sun IT Learning Hub</strong><br>
+    <small>Designed for Exam Success 🚀</small>
+</footer>
+
+</body>
+</html>

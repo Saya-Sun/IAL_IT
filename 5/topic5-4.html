@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Structured Data in a Database</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #d6d6d6;
+}
+
+.navbar {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.section {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.section h3 {
+    color: #1e6bd6;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #1e6bd6;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.card h4 {
+    color: #1e6bd6;
+}
+
+.highlight {
+    background: #dbe8ff;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.tip {
+    background: #ffe6a7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.table-custom th {
+    background: #1e6bd6;
+    color: white;
+}
+
+.arrow-box {
+    text-align: center;
+    margin: 15px 0;
+}
+.arrow-box i {
+    font-size: 28px;
+    color: #1e6bd6;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-primary">
+    <span class="navbar-brand">📘 IGCSE IT</span>
+    <div>
+        <a class="navbar-brand" href="../index.html">🏠 Home</a>
+        <a class="navbar-brand" href="../topic5.html">📂 Topic 5</a>
+    </div>
+</nav>
+
+<div class="container">
+
+<!-- TITLE -->
+<div class="main-title">🗄️ Structured Data in a Database</div>
+
+<!-- TABLE -->
+<div class="card">
+    <h4><i class="bi bi-table"></i> Database Table</h4>
+    <div class="highlight">Data organised in rows and columns</div>
+
+    <ul>
+        <li><strong>Field:</strong> column (one type of data)</li>
+        <li><strong>Record:</strong> row (one item)</li>
+    </ul>
+
+    <div class="tip">
+        💡 Exam Tip: Field = column, Record = row
+    </div>
+</div>
+
+<!-- TABLE EXAMPLE (HTML) -->
+
+<div class="section">
+    <h3>📊 Table (Field & Record)</h3>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-custom text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Song title</th>
+                    <th>Artist</th>
+                    <th>Genre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Happy in love</td>
+                    <td>T. Singer</td>
+                    <td>Pop</td>
+                </tr>
+                <tr>
+                    <td>Dance all day</td>
+                    <td>The Dances</td>
+                    <td>Dance</td>
+                </tr>
+                <tr>
+                    <td>Rock and rock</td>
+                    <td>The 2 Rs</td>
+                    <td>Rock</td>
+                </tr>
+                <tr>
+                    <td>Let's pop!</td>
+                    <td>T. Singer</td>
+                    <td>Pop</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="mt-2">
+        <strong>Field:</strong> Song title, Artist, Genre (columns)<br>
+        <strong>Record:</strong> One row of data 
+            <ul>
+                <li>e.g. "Happy in love", "T. Singer", "Pop"</li>
+            </ul>
+    </p>
+
+    <div class="tip">
+        💡 Exam Tip: Field = column, Record = row
+    </div>
+</div>
+
+<!-- WHY PRIMARY KEY -->
+
+<div class="card">
+    <h4><i class="bi bi-key"></i> Why is a Primary Key Needed?</h4>
+    <div class="highlight">Ensures each record is unique</div>
+
+    <ul>
+        <li>Prevents duplicate records in a table</li>
+        <li>Allows a specific record to be found quickly</li>
+        <li>Makes updating and deleting data accurate</li>
+        <li>Used to link tables together (relationships)</li>
+    </ul>
+
+    <div class="tip">
+        💡 Exam Tip: Primary key = unique + identify + link tables
+    </div>
+</div>
+
+<!-- TABLE WITH PRIMARY KEY -->
+
+<div class="section">
+    <h3>🔑 Table with Primary Key</h3>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-custom text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Song ID</th>
+                    <th>Song title</th>
+                    <th>Artist</th>
+                    <th>Genre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Happy in love</td>
+                    <td>T. Singer</td>
+                    <td>Pop</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Dance all day</td>
+                    <td>The Dances</td>
+                    <td>Dance</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Rock and rock</td>
+                    <td>The 2 Rs</td>
+                    <td>Rock</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Let's pop!</td>
+                    <td>T. Singer</td>
+                    <td>Pop</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="mt-2">
+        <strong>Primary Key:</strong> Song ID (unique for each record)
+    </p>
+
+    <div class="tip">
+        💡 Exam Tip: Primary key must be unique and cannot repeat
+    </div>
+</div>
+
+<!-- RELATIONAL -->
+<div class="card">
+    <h4><i class="bi bi-diagram-3"></i> Relational Database</h4>
+    <div class="highlight">Multiple linked tables</div>
+
+    <p>
+        A relational database uses multiple tables connected using keys.
+    </p>
+</div>
+
+<!-- RELATIONAL DATABASE EXAMPLE -->
+
+
+<div class="section">
+    <h3 style="font-size: 20px;">🔗 Primary Key → Foreign Key Relationship</h3>
+
+    <div style="position: relative; padding: 20px;">
+
+    <!-- ARTISTS TABLE -->
+    <div style="width:100%;">
+        <table class="table table-bordered table-custom text-center">
+            <thead>
+                <tr>
+                    <th>Artist ID</th>
+                    <th>Artist</th>
+                    <th>Contact number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: antiquewhite;">ART01</td>
+                    <td>T. Singer</td>
+                    <td>0110 1111111</td>
+                </tr>
+                <tr>
+                    <td style="background-color: antiquewhite;">ART02</td>
+                    <td>The Dances</td>
+                    <td>0220 2222222</td>
+                </tr>
+                <tr>
+                    <td style="background-color: antiquewhite;">ART03</td>
+                    <td>The 2 Rs</td>
+                    <td>0330 3333333</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- PRIMARY KEY LABEL -->
+    <div style="position:absolute; left:30px; top:190px; font-size:14px; background:#838af7; padding:4px 8px; border-radius:6px;">
+        Primary key
+    </div>
+    <br>
+
+    <!-- SVG ARROW WITH HEAD -->
+    <svg style="position:absolute; left:120px; top:210px;" width="240" height="250">
+
+        <!-- Define arrowhead -->
+        <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+                    refX="10" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+            </marker>
+        </defs>
+
+        <!-- Line with arrow -->
+        <line x1="0" y1="0" x2="140" y2="37" 
+            stroke="black" stroke-width="2"
+            marker-end="url(#arrowhead)" />
+
+    </svg>
+
+    <!-- FOREIGN KEY LABEL -->
+    <div style="position:absolute; left:260px; top:235px; font-size:14px; background:#838af7; padding:4px 8px; border-radius:6px;">
+        Foreign key
+    </div>
+
+    <!-- SONGS TABLE -->
+    <div style="margin-top:40px;">
+        <table class="table table-bordered table-custom text-center">
+            <thead>
+                <tr>
+                    <th>Song ID</th>
+                    <th>Song title</th>
+                    <th>Artist ID</th>
+                    <th>Genre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Happy in love</td>
+                    <td style="background-color: antiquewhite;">ART01</td>
+                    <td>Pop</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Dance all day</td>
+                    <td style="background-color: antiquewhite;">ART02</td>
+                    <td>Dance</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Rock and rock</td>
+                    <td style="background-color: antiquewhite;">ART03</td>
+                    <td>Rock</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Let's pop!</td>
+                    <td style="background-color: antiquewhite;">ART01</td>
+                    <td>Pop</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+</div>
+
+
+
+<!-- PRIMARY KEY -->
+<div class="card">
+    <div class="number">1</div>
+    <h4><i class="bi bi-key"></i> Primary Key</h4>
+    <div class="highlight">Unique identifier</div>
+
+    <ul>
+        <li>Each record has a unique value</li>
+        <li>No duplicates allowed</li>
+        <li>Example: Song ID</li>
+    </ul>
+
+    <h6>✅ Benefits</h6>
+    <ul>
+        <li>Prevents duplicate records</li>
+        <li>Helps update/delete data</li>
+        <li>Links tables together</li>
+    </ul>
+</div>
+
+<!-- FOREIGN KEY -->
+<div class="card">
+    <div class="number">2</div>
+    <h4><i class="bi bi-link-45deg"></i> Foreign Key</h4>
+    <div class="highlight">Links tables</div>
+
+    <p>
+        A primary key from one table used in another table to create a relationship.
+    </p>
+
+    <div class="tip">
+        💡 Exam Tip: Foreign key = link between tables
+    </div>
+</div>
+
+<!-- COMPOSITE KEY -->
+<div class="card">
+    <div class="number">3</div>
+    <h4><i class="bi bi-puzzle"></i> Composite Key</h4>
+    <div class="highlight">Combination of fields</div>
+
+    <p>
+        Two or more fields combined to create a unique identifier.
+    </p>
+
+    <p><strong>Example:</strong> Song Title + Artist</p>
+
+    <br>
+
+<!-- COMPOSITE KEY (SHORTER ARROWS) -->
+
+<div style="position: relative; padding: 20px;">
+
+    <!-- TABLE -->
+    <table class="table table-bordered table-custom text-center">
+        <thead>
+            <tr>
+                <th>Song title</th>
+                <th>Artist</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="background-color: antiquewhite;">Happy in love</td>
+                <td style="background-color: antiquewhite;">T. Singer</td>
+                <td>Pop</td>
+            </tr>
+            <tr>
+                <td style="background-color: antiquewhite;">Dance all day</td>
+                <td style="background-color: antiquewhite;">The Dances</td>
+                <td>Dance</td>
+            </tr>
+            <tr>
+                <td style="background-color: antiquewhite;">Rock and rock</td>
+                <td style="background-color: antiquewhite;">The 2 Rs</td>
+                <td>Rock</td>
+            </tr>
+            <tr>
+                <td style="background-color: antiquewhite;">Let's pop!</td>
+                <td style="background-color: antiquewhite;">T. Singer</td>
+                <td>Pop</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- SHORTER ARROWS -->
+    <svg style="position:absolute; left:25px; top:222px;" width="300" height="60">
+
+        <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+                    refX="10" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+            </marker>
+        </defs>
+
+        <!-- LEFT ARROW -->
+        <line x1="140" y1="20" x2="20" y2="20"
+              stroke="black" stroke-width="2"
+              marker-end="url(#arrowhead)" />
+
+        <!-- RIGHT ARROW -->
+        <line x1="160" y1="20" x2="280" y2="20"
+              stroke="black" stroke-width="2"
+              marker-end="url(#arrowhead)" />
+
+    </svg>
+
+    <!-- LABEL -->
+    <div style="
+        position:absolute;
+        left:100px;
+        top:225px;
+        background:#ddd;
+        padding:5px 12px;
+        border-radius:15px;
+        font-weight:bold;
+    ">
+        Composite key
+    </div>
+
+</div>
+
+</div>
+
+
+
+<!-- SUMMARY -->
+<div class="section">
+    <h3>🧠 Summary</h3>
+    <p>
+        Databases store structured data using tables. Keys are used to uniquely identify records and link tables together.
+    </p>
+
+    <div class="tip">
+        💡 Exam Tip: Primary = unique, Foreign = link, Composite = combined
+    </div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-3">
+    <strong>Tr. Sun IT Learning Hub</strong><br>
+    <small>Designed for Exam Success 🚀</small>
+</footer>
+
+</body>
+</html>

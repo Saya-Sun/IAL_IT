@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SQL - Structured Query Language</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #d6d6d6;
+}
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+}
+.main-title {
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    position: relative;
+}
+.number {
+    position:absolute;
+    top:-10px;
+    left:-10px;
+    background:#1e6bd6;
+    color:white;
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+.highlight {
+    background:#dbe8ff;
+    padding:6px;
+    border-radius:6px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+.tip {
+    background:#ffe6a7;
+    padding:10px;
+    border-radius:8px;
+    margin-top:10px;
+}
+code {
+    display:block;
+    background:#222;
+    color:#0f0;
+    padding:8px;
+    border-radius:6px;
+    margin:8px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="main-title">💻 SQL (Structured Query Language)</div>
+
+<!-- WHAT IS SQL -->
+<div class="card">
+    <h4>📌 What is SQL?</h4>
+    <div class="highlight">Used to query databases</div>
+
+    <p>
+        SQL is a language used to search, retrieve and manage data in a database.
+    </p>
+</div>
+
+<!-- SELECT -->
+<div class="card">
+    <h4>🔍 SELECT & FROM</h4>
+
+    <code>SELECT SongTitle FROM Songs;</code>
+    <code>SELECT SongTitle, Genre FROM Songs;</code>
+    <code>SELECT * FROM Songs;</code>
+
+    <div class="tip">
+        💡 * means select all fields
+    </div>
+</div>
+
+<!-- WHERE -->
+<div class="card">
+    <h4>🎯 WHERE</h4>
+
+    <code>SELECT SongTitle FROM Songs WHERE Genre = 'Pop';</code>
+    <code>SELECT SongTitle FROM Songs WHERE Sales > 10000;</code>
+
+    <p>Used to filter results.</p>
+</div>
+
+<!-- AND OR NOT -->
+<div class="card">
+    <h4>⚙️ AND / OR / NOT</h4>
+
+    <code>SELECT SongTitle FROM Songs WHERE Artist='T. Singer' AND Genre='Pop';</code>
+    <code>SELECT SongTitle FROM Songs WHERE Genre='Pop' OR Genre='Rock';</code>
+    <code>SELECT SongTitle FROM Songs WHERE NOT Genre='Rock';</code>
+
+</div>
+
+<!-- INSERT -->
+<div class="card">
+    <h4>➕ INSERT</h4>
+
+    <code>INSERT INTO Songs VALUES (005, 'Forever', 'The 2 Rs', 'Rock', 5000);</code>
+</div>
+
+<!-- UPDATE -->
+<div class="card">
+    <h4>✏️ UPDATE</h4>
+
+    <code>UPDATE Songs SET Artist='The 3 Rs' WHERE Artist='The 2 Rs';</code>
+</div>
+
+<!-- DELETE -->
+<div class="card">
+    <h4>❌ DELETE</h4>
+
+    <code>DELETE FROM Songs WHERE SongID=005;</code>
+</div>
+
+<!-- JOIN -->
+<div class="card">
+    <h4>🔗 INNER JOIN</h4>
+
+    <code>
+SELECT Songs.SongID, Artists.Artist
+FROM Songs
+INNER JOIN Artists
+ON Songs.ArtistID = Artists.ArtistID;
+    </code>
+
+    <p>Used to combine data from multiple tables.</p>
+</div>
+
+<!-- COUNT GROUP -->
+<div class="card">
+    <h4>📊 COUNT & GROUP BY</h4>
+
+    <code>SELECT COUNT(*) FROM Songs;</code>
+    <code>SELECT COUNT(SongID), Genre FROM Songs GROUP BY Genre;</code>
+</div>
+
+<!-- ORDER -->
+<div class="card">
+    <h4>📈 ORDER BY</h4>
+
+    <code>SELECT * FROM Songs ORDER BY Genre ASC;</code>
+    <code>SELECT * FROM Songs ORDER BY Sales DESC;</code>
+</div>
+
+<!-- WILDCARDS -->
+<div class="card">
+    <h4>🔎 Wildcards</h4>
+
+    <code>SELECT * FROM Artists WHERE Artist LIKE 'T%';</code>
+    <code>SELECT * FROM Artists WHERE Artist LIKE '%es';</code>
+    <code>SELECT * FROM Songs WHERE Genre LIKE 'P__';</code>
+
+    <div class="tip">
+        💡 % = many characters, _ = one character
+    </div>
+</div>
+
+<!-- SUMMARY -->
+<div class="card">
+    <h4>🧠 Summary</h4>
+
+    <ul>
+        <li>SELECT → retrieve data</li>
+        <li>WHERE → filter data</li>
+        <li>JOIN → combine tables</li>
+        <li>INSERT/UPDATE/DELETE → modify data</li>
+    </ul>
+</div>
+
+</div>
+
+</body>
+</html>
